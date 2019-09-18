@@ -1,0 +1,103 @@
+﻿@model List<SmartAdminMvc.Models.ClientesModelo>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(canPage: true, rowsPerPage: 10);
+    grid.Bind(source: Model, rowCount: ViewBag.TotalRows, autoSortAndPage: false);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar</title>
+
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Listado de clientes</h2>
+        <<nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Buscar</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    @using (Html.BeginForm("ListarClientes", "Clientes", FormMethod.Get, new { @class = "navbar-form navbar left" }))
+                    {
+
+                        <div class="form-group">
+                            <input type="text" name="buscar" value="@ViewBag.buscar" class="form-control" placeholder="buscar" />
+
+                        </div>
+                        <button type="submit" value="Buscar" class="btn btn-success">Buscar</button>
+
+                      
+                       
+                    }
+
+
+                </div>
+
+            </div>
+
+        </nav>
+        <div>
+            @grid.Table(
+             tableStyle: "table table-responsive table, bordered",
+             columns: grid.Columns(
+                 grid.Column(columnName: "id", header: "Identidad"),
+                 grid.Column(columnName: "nombre", header: "Nombre"),
+                 grid.Column(columnName: "apellido", header: "Apellido"),
+                 grid.Column(columnName: "telefono", header: "Telefono"),
+                 grid.Column(columnName: "direccion", header: "Direccion"),
+                 grid.Column(columnName: "correo", header: "Correo")
+                 )
+    )
+
+            <div class="row">
+                <div class="col-sm-6 ">
+                    @grid.PagerList(mode: WebGridPagerModes.All, paginationStyle: "pagination pagination-small pagination-right")
+                </div>
+
+            </div>
+
+            @Html.Hidden("dir", grid.SortDirection)
+            @Html.Hidden("col", grid.SortColumn)
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <script src="~/Scripts/jquery-1.6.3.min.js"></script>
+    
+
+    <script>
+
+		$(function () {
+			try {
+				var dir = $("#dir").val();
+				var col = $("#col").val();
+				var header = $("th a[href*=" + col + "]");
+				if (dir == "Ascending") {
+					header.text(header.text()+"^");
+				}
+
+				if (dir=="Descending"){
+
+					header.text(header.text() + ">");
+				}
+			} catch (e) {
+
+			}
+		})
+    </script>
+
+</body>
+</html>
+
+

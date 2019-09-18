@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdpalacasaModelStoreContainer" CdmEntityContainer="bdpalacasaEntities">
+    <EntitySetMapping Name="mensajesContactoes">
+      <EntityTypeMapping TypeName="bdpalacasaModel.mensajesContacto">
+        <MappingFragment StoreEntitySet="mensajesContacto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="asunto" ColumnName="asunto" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servicioSolicitudSinAutenticars">
+      <EntityTypeMapping TypeName="bdpalacasaModel.servicioSolicitudSinAutenticar">
+        <MappingFragment StoreEntitySet="servicioSolicitudSinAutenticar">
+          <ScalarProperty Name="horaInicio" ColumnName="horaInicio" />
+          <ScalarProperty Name="horas" ColumnName="horas" />
+          <ScalarProperty Name="fechaServicio" ColumnName="fechaServicio" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idServicioTipo" ColumnName="idServicioTipo" />
+          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+          <ScalarProperty Name="apellidoCliente" ColumnName="apellidoCliente" />
+          <ScalarProperty Name="identidad" ColumnName="identidad" />
+          <ScalarProperty Name="telefonoCliente" ColumnName="telefonoCliente" />
+          <ScalarProperty Name="direccionCliente" ColumnName="direccionCliente" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servicioTipoes">
+      <EntityTypeMapping TypeName="bdpalacasaModel.servicioTipo">
+        <MappingFragment StoreEntitySet="servicioTipo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servicioHoras">
+      <EntityTypeMapping TypeName="bdpalacasaModel.servicioHora">
+        <MappingFragment StoreEntitySet="servicioHora">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

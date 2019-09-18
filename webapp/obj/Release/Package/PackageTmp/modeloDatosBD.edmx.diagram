@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="062829d716cd422a96708e394d31a66d" Name="Diagram1">
+        <EntityTypeShape EntityType="bdSisHMModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.AspNetRole" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.AspNetUser" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.bonosCliente" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.empresas_registradas" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.historialBonosCliete" Width="1.5" PointX="10.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.historialModificacionesOrdenesPropia" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.MetodosPago" Width="1.5" PointX="3" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.ordene" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.plane" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.UsuariosCliente" Width="1.5" PointX="3" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.UsuariosExterno" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdSisHMModel.Voto" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="bdSisHMModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__bonosClie__idUsu__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__historial__idUsu__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__historial__idUsu__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__ordenes__idUsuar__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__bonosClie__idCom__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__bonosClie__idUsu__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__historial__idBon__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__empresas___id_pl__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__ordenes__idEmpre__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__Votos__idEmpresa__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__historial__idOrd__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__ordenes__idMetod__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__ordenes__idUsuar__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.FK__Votos__idUsuario__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="bdSisHMModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="bdSisHMModel.comentario" Width="1.5" PointX="8.25" PointY="13.625" />
+        <AssociationConnector Association="bdSisHMModel.FK__comentari__idTie__03F0984C" />
+        <AssociationConnector Association="bdSisHMModel.FK__comentari__idusu__02FC7413" />
+        <AssociationConnector Association="bdSisHMModel.FK__ordenes__idUsuar__151B244E" />
+        <AssociationConnector Association="bdSisHMModel.FK__bonosClie__idUsu__2739D489" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

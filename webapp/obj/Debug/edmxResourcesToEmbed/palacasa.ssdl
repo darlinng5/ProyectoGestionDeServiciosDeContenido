@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdpalacasaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="mensajesContacto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreCliente" Type="varchar" MaxLength="100" />
+    <Property Name="correo" Type="varchar" MaxLength="40" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="asunto" Type="varchar" MaxLength="100" />
+    <Property Name="mensaje" Type="varchar(max)" />
+    <Property Name="estado" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="servicioHora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="servicioSolicitudSinAutenticar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idServicioTipo" Type="int" />
+    <Property Name="nombreCliente" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="apellidoCliente" Type="varchar" MaxLength="100" />
+    <Property Name="identidad" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="telefonoCliente" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="direccionCliente" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="observacion" Type="varchar" MaxLength="200" />
+    <Property Name="estado" Type="varchar" MaxLength="20" />
+    <Property Name="fechaCreacion" Type="datetime" />
+    <Property Name="fechaServicio" Type="date" />
+    <Property Name="horas" Type="int" />
+    <Property Name="horaInicio" Type="int" />
+  </EntityType>
+  <EntityType Name="servicioTipo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="40" />
+    <Property Name="estado" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__servicioS__horaI__3F466844">
+    <End Role="servicioHora" Type="Self.servicioHora" Multiplicity="0..1" />
+    <End Role="servicioSolicitudSinAutenticar" Type="Self.servicioSolicitudSinAutenticar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicioHora">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="servicioSolicitudSinAutenticar">
+        <PropertyRef Name="horaInicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__servicioS__idSer__3A81B327">
+    <End Role="servicioTipo" Type="Self.servicioTipo" Multiplicity="0..1" />
+    <End Role="servicioSolicitudSinAutenticar" Type="Self.servicioSolicitudSinAutenticar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicioTipo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="servicioSolicitudSinAutenticar">
+        <PropertyRef Name="idServicioTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bdpalacasaModelStoreContainer">
+    <EntitySet Name="mensajesContacto" EntityType="Self.mensajesContacto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="servicioHora" EntityType="Self.servicioHora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="servicioSolicitudSinAutenticar" EntityType="Self.servicioSolicitudSinAutenticar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="servicioTipo" EntityType="Self.servicioTipo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__servicioS__horaI__3F466844" Association="Self.FK__servicioS__horaI__3F466844">
+      <End Role="servicioHora" EntitySet="servicioHora" />
+      <End Role="servicioSolicitudSinAutenticar" EntitySet="servicioSolicitudSinAutenticar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__servicioS__idSer__3A81B327" Association="Self.FK__servicioS__idSer__3A81B327">
+      <End Role="servicioTipo" EntitySet="servicioTipo" />
+      <End Role="servicioSolicitudSinAutenticar" EntitySet="servicioSolicitudSinAutenticar" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

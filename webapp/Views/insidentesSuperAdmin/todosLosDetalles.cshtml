@@ -1,0 +1,105 @@
+﻿@model SmartAdminMvc.insidente
+
+@{
+    ViewBag.Title = "verDetallesInsidente";
+}
+
+
+
+<div>
+
+
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaTomado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaTomado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.breveDescripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.breveDescripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.problemaResuelto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.problemaResuelto)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Priorizacion")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidentePriorizacion.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Categoria")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidenteCategoria.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Departamento")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empresaDepartamento.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Usuario que reportó")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Insidente Asignado a:")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser1.UserName)
+        </dd>
+
+    </dl>
+</div>
+

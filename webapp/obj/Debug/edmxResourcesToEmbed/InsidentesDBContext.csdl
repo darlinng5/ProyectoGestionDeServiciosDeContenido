@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InsidentesBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="empresaDepartamento">
+    <Key>
+      <PropertyRef Name="idDepartamento" />
+    </Key>
+    <Property Name="idDepartamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="insidentes" Relationship="InsidentesBDModel.FK__insidente__idDep__4F7CD00D" FromRole="empresaDepartamento" ToRole="insidente" />
+  </EntityType>
+  <EntityType Name="insidenteCategoria">
+    <Key>
+      <PropertyRef Name="idCategoria" />
+    </Key>
+    <Property Name="idCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="insidentes" Relationship="InsidentesBDModel.FK__insidente__idCat__4E88ABD4" FromRole="insidenteCategoria" ToRole="insidente" />
+  </EntityType>
+  <EntityType Name="insidentePriorizacion">
+    <Key>
+      <PropertyRef Name="idPriorizacion" />
+    </Key>
+    <Property Name="idPriorizacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="insidentes" Relationship="InsidentesBDModel.FK__insidente__idPri__4D94879B" FromRole="insidentePriorizacion" ToRole="insidente" />
+  </EntityType>
+  <EntityContainer Name="InsidentesDBContextEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="empresaDepartamentoes" EntityType="Self.empresaDepartamento" />
+    <EntitySet Name="insidenteCategorias" EntityType="Self.insidenteCategoria" />
+    <EntitySet Name="insidentePriorizacions" EntityType="Self.insidentePriorizacion" />
+    <EntitySet Name="C__MigrationHistory" EntityType="InsidentesBDModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="InsidentesBDModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="InsidentesBDModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="InsidentesBDModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="InsidentesBDModel.AspNetUser" />
+    <EntitySet Name="insidentes" EntityType="InsidentesBDModel.insidente" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="InsidentesBDModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="InsidentesBDModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idUsu__5070F446" Association="InsidentesBDModel.FK__insidente__idUsu__5070F446">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="insidente" EntitySet="insidentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idDep__4F7CD00D" Association="InsidentesBDModel.FK__insidente__idDep__4F7CD00D">
+      <End Role="empresaDepartamento" EntitySet="empresaDepartamentoes" />
+      <End Role="insidente" EntitySet="insidentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idCat__4E88ABD4" Association="InsidentesBDModel.FK__insidente__idCat__4E88ABD4">
+      <End Role="insidenteCategoria" EntitySet="insidenteCategorias" />
+      <End Role="insidente" EntitySet="insidentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idPri__4D94879B" Association="InsidentesBDModel.FK__insidente__idPri__4D94879B">
+      <End Role="insidentePriorizacion" EntitySet="insidentePriorizacions" />
+      <End Role="insidente" EntitySet="insidentes" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="InsidentesBDModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <EntitySet Name="insidenteRespuestas" EntityType="InsidentesBDModel.insidenteRespuesta" />
+    <AssociationSet Name="FK__insidente__idUsu__5441852A" Association="InsidentesBDModel.FK__insidente__idUsu__5441852A">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="insidenteRespuesta" EntitySet="insidenteRespuestas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idIns__534D60F1" Association="InsidentesBDModel.FK__insidente__idIns__534D60F1">
+      <End Role="insidente" EntitySet="insidentes" />
+      <End Role="insidenteRespuesta" EntitySet="insidenteRespuestas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insidente__idUsu__5AEE82B9" Association="InsidentesBDModel.FK__insidente__idUsu__5AEE82B9">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="insidente" EntitySet="insidentes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="InsidentesBDModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="InsidentesBDModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="InsidentesBDModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="InsidentesBDModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="InsidentesBDModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="insidentes" Relationship="InsidentesBDModel.FK__insidente__idUsu__5070F446" FromRole="AspNetUser" ToRole="insidente" />
+    <NavigationProperty Name="AspNetRoles" Relationship="InsidentesBDModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+    <NavigationProperty Name="insidenteRespuestas" Relationship="InsidentesBDModel.FK__insidente__idUsu__5441852A" FromRole="AspNetUser" ToRole="insidenteRespuesta" />
+    <NavigationProperty Name="insidentes1" Relationship="InsidentesBDModel.FK__insidente__idUsu__5AEE82B9" FromRole="AspNetUser" ToRole="insidente" />
+    <Property Name="esSoporteTecnico" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="insidente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fechaSolicitud" Type="DateTime" Precision="3" />
+    <Property Name="fechaTomado" Type="DateTime" Precision="3" />
+    <Property Name="fechaCierre" Type="DateTime" Precision="3" />
+    <Property Name="breveDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="problemaResuelto" Type="Boolean" />
+    <Property Name="idPriorizacion" Type="Int32" />
+    <Property Name="idCategoria" Type="Int32" />
+    <Property Name="idDepartamento" Type="Int32" />
+    <Property Name="idUsuarioCreoInsidente" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="InsidentesBDModel.FK__insidente__idUsu__5070F446" FromRole="insidente" ToRole="AspNetUser" />
+    <NavigationProperty Name="empresaDepartamento" Relationship="InsidentesBDModel.FK__insidente__idDep__4F7CD00D" FromRole="insidente" ToRole="empresaDepartamento" />
+    <NavigationProperty Name="insidenteCategoria" Relationship="InsidentesBDModel.FK__insidente__idCat__4E88ABD4" FromRole="insidente" ToRole="insidenteCategoria" />
+    <NavigationProperty Name="insidentePriorizacion" Relationship="InsidentesBDModel.FK__insidente__idPri__4D94879B" FromRole="insidente" ToRole="insidentePriorizacion" />
+    <NavigationProperty Name="insidenteRespuestas" Relationship="InsidentesBDModel.FK__insidente__idIns__534D60F1" FromRole="insidente" ToRole="insidenteRespuesta" />
+    <Property Name="idUsuarioResolvioInsidente" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser1" Relationship="InsidentesBDModel.FK__insidente__idUsu__5AEE82B9" FromRole="insidente" ToRole="AspNetUser" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="InsidentesBDModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="InsidentesBDModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idUsu__5070F446">
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="insidente">
+        <PropertyRef Name="idUsuarioCreoInsidente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idDep__4F7CD00D">
+    <End Type="InsidentesBDModel.empresaDepartamento" Role="empresaDepartamento" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empresaDepartamento">
+        <PropertyRef Name="idDepartamento" />
+      </Principal>
+      <Dependent Role="insidente">
+        <PropertyRef Name="idDepartamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idCat__4E88ABD4">
+    <End Type="InsidentesBDModel.insidenteCategoria" Role="insidenteCategoria" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="insidenteCategoria">
+        <PropertyRef Name="idCategoria" />
+      </Principal>
+      <Dependent Role="insidente">
+        <PropertyRef Name="idCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idPri__4D94879B">
+    <End Type="InsidentesBDModel.insidentePriorizacion" Role="insidentePriorizacion" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="insidentePriorizacion">
+        <PropertyRef Name="idPriorizacion" />
+      </Principal>
+      <Dependent Role="insidente">
+        <PropertyRef Name="idPriorizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="InsidentesBDModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityType Name="insidenteRespuesta">
+    <Key>
+      <PropertyRef Name="idRespuesta" />
+    </Key>
+    <Property Name="idRespuesta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fechaRespuesta" Type="DateTime" Precision="3" />
+    <Property Name="resolvioProblema" Type="Boolean" />
+    <Property Name="respuestaDeSoporte" Type="Boolean" />
+    <Property Name="comentario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="idInsidente" Type="Int32" />
+    <Property Name="idUsuarioRespuesta" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="InsidentesBDModel.FK__insidente__idUsu__5441852A" FromRole="insidenteRespuesta" ToRole="AspNetUser" />
+    <NavigationProperty Name="insidente" Relationship="InsidentesBDModel.FK__insidente__idIns__534D60F1" FromRole="insidenteRespuesta" ToRole="insidente" />
+  </EntityType>
+  <Association Name="FK__insidente__idUsu__5441852A">
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidenteRespuesta" Role="insidenteRespuesta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="insidenteRespuesta">
+        <PropertyRef Name="idUsuarioRespuesta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idIns__534D60F1">
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidenteRespuesta" Role="insidenteRespuesta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="insidente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="insidenteRespuesta">
+        <PropertyRef Name="idInsidente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insidente__idUsu__5AEE82B9">
+    <End Type="InsidentesBDModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="InsidentesBDModel.insidente" Role="insidente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="insidente">
+        <PropertyRef Name="idUsuarioResolvioInsidente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

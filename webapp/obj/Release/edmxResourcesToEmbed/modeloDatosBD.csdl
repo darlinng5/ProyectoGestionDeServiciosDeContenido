@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdSisHMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="bonosClientes" Relationship="Self.FK__bonosClie__idUsu__4AB81AF0" FromRole="AspNetUsers" ToRole="bonosClientes" />
+    <NavigationProperty Name="historialModificacionesOrdenesPropias" Relationship="Self.FK__historial__idUsu__4316F928" FromRole="AspNetUsers" ToRole="historialModificacionesOrdenesPropias" />
+    <NavigationProperty Name="historialBonosClietes" Relationship="Self.FK__historial__idUsu__5070F446" FromRole="AspNetUsers" ToRole="historialBonosClietes" />
+    <NavigationProperty Name="ordenes" Relationship="Self.FK__ordenes__idUsuar__3C69FB99" FromRole="AspNetUsers" ToRole="ordenes" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+    <NavigationProperty Name="ordenes1" Relationship="bdSisHMModel.FK__ordenes__idUsuar__151B244E" FromRole="AspNetUser" ToRole="ordene" />
+    <NavigationProperty Name="bonosClientes1" Relationship="bdSisHMModel.FK__bonosClie__idUsu__2739D489" FromRole="AspNetUser" ToRole="bonosCliente" />
+  </EntityType>
+  <EntityType Name="bonosCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuarioCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idUsuarioCreo" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="idCompra" Type="Int32" />
+    <Property Name="codigoGuid" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaInicio" Type="DateTime" Precision="0" />
+    <Property Name="fechaFin" Type="DateTime" Precision="0" />
+    <Property Name="montoBono" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="estado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__bonosClie__idUsu__4AB81AF0" FromRole="bonosClientes" ToRole="AspNetUsers" />
+    <NavigationProperty Name="ordene" Relationship="Self.FK__bonosClie__idCom__4BAC3F29" FromRole="bonosClientes" ToRole="ordenes" />
+    <NavigationProperty Name="UsuariosCliente" Relationship="Self.FK__bonosClie__idUsu__49C3F6B7" FromRole="bonosClientes" ToRole="UsuariosClientes" />
+    <NavigationProperty Name="historialBonosClietes" Relationship="Self.FK__historial__idBon__4F7CD00D" FromRole="bonosClientes" ToRole="historialBonosClietes" />
+    <Property Name="idUsuarioExterno" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser1" Relationship="bdSisHMModel.FK__bonosClie__idUsu__2739D489" FromRole="bonosCliente" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="empresas_registradas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_plan" Type="Int32" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nombreEncargado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="apellidoEncargado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="telefonoEncargado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nombreBaseDatos" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="plane" Relationship="Self.FK__empresas___id_pl__22AA2996" FromRole="empresas_registradas" ToRole="planes" />
+    <NavigationProperty Name="ordenes" Relationship="Self.FK__ordenes__idEmpre__3E52440B" FromRole="empresas_registradas" ToRole="ordenes" />
+    <NavigationProperty Name="Votos" Relationship="Self.FK__Votos__idEmpresa__73BA3083" FromRole="empresas_registradas" ToRole="Votos" />
+    <Property Name="idTiendaFirebase" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="comentarios" Relationship="bdSisHMModel.FK__comentari__idTie__03F0984C" FromRole="empresas_registradas" ToRole="comentario" />
+  </EntityType>
+  <EntityType Name="historialBonosCliete">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idBono" Type="Int32" />
+    <Property Name="idUsuarioModifico" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="fechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="estadoAnterior" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="estadoActual" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="observacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__historial__idUsu__5070F446" FromRole="historialBonosClietes" ToRole="AspNetUsers" />
+    <NavigationProperty Name="bonosCliente" Relationship="Self.FK__historial__idBon__4F7CD00D" FromRole="historialBonosClietes" ToRole="bonosClientes" />
+  </EntityType>
+  <EntityType Name="historialModificacionesOrdenesPropia">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="estadoAnterior" Type="Int32" />
+    <Property Name="estadoActual" Type="Int32" />
+    <Property Name="idOrden" Type="Int32" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__historial__idUsu__4316F928" FromRole="historialModificacionesOrdenesPropias" ToRole="AspNetUsers" />
+    <NavigationProperty Name="ordene" Relationship="Self.FK__historial__idOrd__440B1D61" FromRole="historialModificacionesOrdenesPropias" ToRole="ordenes" />
+  </EntityType>
+  <EntityType Name="MetodosPago">
+    <Key>
+      <PropertyRef Name="idMetodo" />
+    </Key>
+    <Property Name="idMetodo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreMetodo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Int32" />
+    <NavigationProperty Name="ordenes" Relationship="Self.FK__ordenes__idMetod__3D5E1FD2" FromRole="MetodosPago" ToRole="ordenes" />
+  </EntityType>
+  <EntityType Name="ordene">
+    <Key>
+      <PropertyRef Name="idOrden" />
+    </Key>
+    <Property Name="idOrden" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="idMetodoPago" Type="Int32" />
+    <Property Name="idEmpresa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="idUsuarioCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaOrden" Type="DateTime" Precision="0" />
+    <Property Name="TotalTransaccion" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="estadoOrden" Type="Int32" />
+    <Property Name="decripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__ordenes__idUsuar__3C69FB99" FromRole="ordenes" ToRole="AspNetUsers" />
+    <NavigationProperty Name="bonosClientes" Relationship="Self.FK__bonosClie__idCom__4BAC3F29" FromRole="ordenes" ToRole="bonosClientes" />
+    <NavigationProperty Name="empresas_registradas" Relationship="Self.FK__ordenes__idEmpre__3E52440B" FromRole="ordenes" ToRole="empresas_registradas" />
+    <NavigationProperty Name="historialModificacionesOrdenesPropias" Relationship="Self.FK__historial__idOrd__440B1D61" FromRole="ordenes" ToRole="historialModificacionesOrdenesPropias" />
+    <NavigationProperty Name="MetodosPago" Relationship="Self.FK__ordenes__idMetod__3D5E1FD2" FromRole="ordenes" ToRole="MetodosPago" />
+    <NavigationProperty Name="UsuariosCliente" Relationship="Self.FK__ordenes__idUsuar__3F466844" FromRole="ordenes" ToRole="UsuariosClientes" />
+    <Property Name="idUsuarioExterno" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser1" Relationship="bdSisHMModel.FK__ordenes__idUsuar__151B244E" FromRole="ordene" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="plane">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="empresas_registradas" Relationship="Self.FK__empresas___id_pl__22AA2996" FromRole="planes" ToRole="empresas_registradas" />
+  </EntityType>
+  <EntityType Name="UsuariosCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="apellido" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="bonosClientes" Relationship="Self.FK__bonosClie__idUsu__49C3F6B7" FromRole="UsuariosClientes" ToRole="bonosClientes" />
+    <NavigationProperty Name="ordenes" Relationship="Self.FK__ordenes__idUsuar__3F466844" FromRole="UsuariosClientes" ToRole="ordenes" />
+  </EntityType>
+  <EntityType Name="UsuariosExterno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Votos" Relationship="Self.FK__Votos__idUsuario__72C60C4A" FromRole="UsuariosExternos" ToRole="Votos" />
+    <NavigationProperty Name="comentarios" Relationship="bdSisHMModel.FK__comentari__idusu__02FC7413" FromRole="UsuariosExterno" ToRole="comentario" />
+  </EntityType>
+  <EntityType Name="Voto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idUsuariosExternos" Type="Int32" Nullable="false" />
+    <Property Name="idEmpresa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="empresas_registradas" Relationship="Self.FK__Votos__idEmpresa__73BA3083" FromRole="Votos" ToRole="empresas_registradas" />
+    <NavigationProperty Name="UsuariosExterno" Relationship="Self.FK__Votos__idUsuario__72C60C4A" FromRole="Votos" ToRole="UsuariosExternos" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bonosClie__idUsu__4AB81AF0">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="bonosClientes" Type="Self.bonosCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bonosClientes">
+        <PropertyRef Name="idUsuarioCreo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__historial__idUsu__4316F928">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="historialModificacionesOrdenesPropias" Type="Self.historialModificacionesOrdenesPropia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="historialModificacionesOrdenesPropias">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__historial__idUsu__5070F446">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="historialBonosClietes" Type="Self.historialBonosCliete" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="historialBonosClietes">
+        <PropertyRef Name="idUsuarioModifico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idUsuar__3C69FB99">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bonosClie__idCom__4BAC3F29">
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="0..1" />
+    <End Role="bonosClientes" Type="Self.bonosCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ordenes">
+        <PropertyRef Name="idOrden" />
+      </Principal>
+      <Dependent Role="bonosClientes">
+        <PropertyRef Name="idCompra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bonosClie__idUsu__49C3F6B7">
+    <End Role="UsuariosClientes" Type="Self.UsuariosCliente" Multiplicity="0..1" />
+    <End Role="bonosClientes" Type="Self.bonosCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuariosClientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bonosClientes">
+        <PropertyRef Name="idUsuarioCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__historial__idBon__4F7CD00D">
+    <End Role="bonosClientes" Type="Self.bonosCliente" Multiplicity="0..1" />
+    <End Role="historialBonosClietes" Type="Self.historialBonosCliete" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bonosClientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="historialBonosClietes">
+        <PropertyRef Name="idBono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__empresas___id_pl__22AA2996">
+    <End Role="planes" Type="Self.plane" Multiplicity="0..1" />
+    <End Role="empresas_registradas" Type="Self.empresas_registradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="planes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="empresas_registradas">
+        <PropertyRef Name="id_plan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idEmpre__3E52440B">
+    <End Role="empresas_registradas" Type="Self.empresas_registradas" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empresas_registradas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Votos__idEmpresa__73BA3083">
+    <End Role="empresas_registradas" Type="Self.empresas_registradas" Multiplicity="1" />
+    <End Role="Votos" Type="Self.Voto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empresas_registradas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Votos">
+        <PropertyRef Name="idEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__historial__idOrd__440B1D61">
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="0..1" />
+    <End Role="historialModificacionesOrdenesPropias" Type="Self.historialModificacionesOrdenesPropia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ordenes">
+        <PropertyRef Name="idOrden" />
+      </Principal>
+      <Dependent Role="historialModificacionesOrdenesPropias">
+        <PropertyRef Name="idOrden" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idMetod__3D5E1FD2">
+    <End Role="MetodosPago" Type="Self.MetodosPago" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetodosPago">
+        <PropertyRef Name="idMetodo" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idMetodoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idUsuar__3F466844">
+    <End Role="UsuariosClientes" Type="Self.UsuariosCliente" Multiplicity="0..1" />
+    <End Role="ordenes" Type="Self.ordene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuariosClientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ordenes">
+        <PropertyRef Name="idUsuarioCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Votos__idUsuario__72C60C4A">
+    <End Role="UsuariosExternos" Type="Self.UsuariosExterno" Multiplicity="1" />
+    <End Role="Votos" Type="Self.Voto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuariosExternos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Votos">
+        <PropertyRef Name="idUsuariosExternos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="bdSisHMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="bonosClientes" EntityType="Self.bonosCliente" />
+    <EntitySet Name="empresas_registradas" EntityType="Self.empresas_registradas" />
+    <EntitySet Name="historialBonosClietes" EntityType="Self.historialBonosCliete" />
+    <EntitySet Name="historialModificacionesOrdenesPropias" EntityType="Self.historialModificacionesOrdenesPropia" />
+    <EntitySet Name="MetodosPagoes" EntityType="Self.MetodosPago" />
+    <EntitySet Name="ordenes" EntityType="Self.ordene" />
+    <EntitySet Name="planes" EntityType="Self.plane" />
+    <EntitySet Name="UsuariosClientes" EntityType="Self.UsuariosCliente" />
+    <EntitySet Name="UsuariosExternos" EntityType="Self.UsuariosExterno" />
+    <EntitySet Name="Votos" EntityType="Self.Voto" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bonosClie__idUsu__4AB81AF0" Association="Self.FK__bonosClie__idUsu__4AB81AF0">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="bonosClientes" EntitySet="bonosClientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__historial__idUsu__4316F928" Association="Self.FK__historial__idUsu__4316F928">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="historialModificacionesOrdenesPropias" EntitySet="historialModificacionesOrdenesPropias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__historial__idUsu__5070F446" Association="Self.FK__historial__idUsu__5070F446">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="historialBonosClietes" EntitySet="historialBonosClietes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idUsuar__3C69FB99" Association="Self.FK__ordenes__idUsuar__3C69FB99">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bonosClie__idCom__4BAC3F29" Association="Self.FK__bonosClie__idCom__4BAC3F29">
+      <End Role="ordenes" EntitySet="ordenes" />
+      <End Role="bonosClientes" EntitySet="bonosClientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bonosClie__idUsu__49C3F6B7" Association="Self.FK__bonosClie__idUsu__49C3F6B7">
+      <End Role="UsuariosClientes" EntitySet="UsuariosClientes" />
+      <End Role="bonosClientes" EntitySet="bonosClientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__historial__idBon__4F7CD00D" Association="Self.FK__historial__idBon__4F7CD00D">
+      <End Role="bonosClientes" EntitySet="bonosClientes" />
+      <End Role="historialBonosClietes" EntitySet="historialBonosClietes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__empresas___id_pl__22AA2996" Association="Self.FK__empresas___id_pl__22AA2996">
+      <End Role="planes" EntitySet="planes" />
+      <End Role="empresas_registradas" EntitySet="empresas_registradas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idEmpre__3E52440B" Association="Self.FK__ordenes__idEmpre__3E52440B">
+      <End Role="empresas_registradas" EntitySet="empresas_registradas" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Votos__idEmpresa__73BA3083" Association="Self.FK__Votos__idEmpresa__73BA3083">
+      <End Role="empresas_registradas" EntitySet="empresas_registradas" />
+      <End Role="Votos" EntitySet="Votos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__historial__idOrd__440B1D61" Association="Self.FK__historial__idOrd__440B1D61">
+      <End Role="ordenes" EntitySet="ordenes" />
+      <End Role="historialModificacionesOrdenesPropias" EntitySet="historialModificacionesOrdenesPropias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idMetod__3D5E1FD2" Association="Self.FK__ordenes__idMetod__3D5E1FD2">
+      <End Role="MetodosPago" EntitySet="MetodosPagoes" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idUsuar__3F466844" Association="Self.FK__ordenes__idUsuar__3F466844">
+      <End Role="UsuariosClientes" EntitySet="UsuariosClientes" />
+      <End Role="ordenes" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Votos__idUsuario__72C60C4A" Association="Self.FK__Votos__idUsuario__72C60C4A">
+      <End Role="UsuariosExternos" EntitySet="UsuariosExternos" />
+      <End Role="Votos" EntitySet="Votos" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <EntitySet Name="comentarios" EntityType="bdSisHMModel.comentario" />
+    <AssociationSet Name="FK__comentari__idTie__03F0984C" Association="bdSisHMModel.FK__comentari__idTie__03F0984C">
+      <End Role="empresas_registradas" EntitySet="empresas_registradas" />
+      <End Role="comentario" EntitySet="comentarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__comentari__idusu__02FC7413" Association="bdSisHMModel.FK__comentari__idusu__02FC7413">
+      <End Role="UsuariosExterno" EntitySet="UsuariosExternos" />
+      <End Role="comentario" EntitySet="comentarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenes__idUsuar__151B244E" Association="bdSisHMModel.FK__ordenes__idUsuar__151B244E">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="ordene" EntitySet="ordenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__bonosClie__idUsu__2739D489" Association="bdSisHMModel.FK__bonosClie__idUsu__2739D489">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="bonosCliente" EntitySet="bonosClientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="comentario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idusuario" Type="Int32" />
+    <Property Name="idTienda" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fechaPublicacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="nickname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="comentario1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="empresas_registradas" Relationship="bdSisHMModel.FK__comentari__idTie__03F0984C" FromRole="comentario" ToRole="empresas_registradas" />
+    <NavigationProperty Name="UsuariosExterno" Relationship="bdSisHMModel.FK__comentari__idusu__02FC7413" FromRole="comentario" ToRole="UsuariosExterno" />
+  </EntityType>
+  <Association Name="FK__comentari__idTie__03F0984C">
+    <End Type="bdSisHMModel.empresas_registradas" Role="empresas_registradas" Multiplicity="0..1" />
+    <End Type="bdSisHMModel.comentario" Role="comentario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empresas_registradas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="comentario">
+        <PropertyRef Name="idTienda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__comentari__idusu__02FC7413">
+    <End Type="bdSisHMModel.UsuariosExterno" Role="UsuariosExterno" Multiplicity="0..1" />
+    <End Type="bdSisHMModel.comentario" Role="comentario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuariosExterno">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="comentario">
+        <PropertyRef Name="idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenes__idUsuar__151B244E">
+    <End Type="bdSisHMModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="bdSisHMModel.ordene" Role="ordene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ordene">
+        <PropertyRef Name="idUsuarioExterno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__bonosClie__idUsu__2739D489">
+    <End Type="bdSisHMModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="bdSisHMModel.bonosCliente" Role="bonosCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bonosCliente">
+        <PropertyRef Name="idUsuarioExterno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

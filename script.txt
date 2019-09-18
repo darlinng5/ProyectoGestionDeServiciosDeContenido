@@ -1,0 +1,34 @@
+create table insidente(
+id int primary key identity,
+fechaSolicitud datetime,
+fechaTomado datetime,
+fechaCierre datetime,
+breveDescripcion varchar(50),
+descripcion varchar(max),
+estado varchar(25),
+problemaResuelto bit,
+idPriorizacion int foreign key references insidentePriorizacion(idPriorizacion),
+idCategoria int foreign key references insidenteCategoria(idCategoria),
+idDepartamento int foreign key references empresaDepartamento(idDepartamento),
+idUsuarioCreoInsidente nvarchar(128) foreign key references [dbo].[AspNetUsers](Id)
+)
+
+create table insidentePriorizacion(
+idPriorizacion int primary key identity,
+nombre varchar(25),
+descripcion varchar(200),
+estado varchar(25)
+);
+create table insidenteCategoria(
+idCategoria int primary key identity,
+nombre varchar(25),
+descripcion varchar(200),
+estado varchar(25)
+);
+
+create table empresaDepartamento(
+idDepartamento int primary key identity,
+nombre varchar(25),
+descripcion varchar(200),
+estado varchar(25)
+);

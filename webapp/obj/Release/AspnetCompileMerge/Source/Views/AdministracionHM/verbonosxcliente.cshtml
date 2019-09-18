@@ -1,0 +1,87 @@
+﻿@model IEnumerable<SmartAdminMvc.Models.bonoClienteHMModelo>
+
+@{
+    ViewBag.Title = "verbonosxcliente";
+}
+
+<h2>verbonosxcliente</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idUsuarioCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuarioNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idUsuarioCreo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigoGuid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.montoBono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuarioCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuarioNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuarioCreo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigoGuid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.montoBono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="proyectoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="proyectoDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="proyectoDBModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="proyectoDBModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="proyectoDBModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="proyectoDBModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="proyectoDBModel.AspNetUser" />
+    <EntitySet Name="formularios" EntityType="proyectoDBModel.formulario" />
+    <EntitySet Name="formularioSeccions" EntityType="proyectoDBModel.formularioSeccion" />
+    <EntitySet Name="preguntaFormularios" EntityType="proyectoDBModel.preguntaFormulario" />
+    <EntitySet Name="proyectoes" EntityType="proyectoDBModel.proyecto" />
+    <EntitySet Name="respuestaFormularios" EntityType="proyectoDBModel.respuestaFormulario" />
+    <EntitySet Name="sysdiagrams" EntityType="proyectoDBModel.sysdiagram" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="proyectoDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="proyectoDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__proyecto__idClie__46E78A0C" Association="proyectoDBModel.FK__proyecto__idClie__46E78A0C">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="proyecto" EntitySet="proyectoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__formulari__idFor__5EBF139D" Association="proyectoDBModel.FK__formulari__idFor__5EBF139D">
+      <End Role="formulario" EntitySet="formularios" />
+      <End Role="formularioSeccion" EntitySet="formularioSeccions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__preguntaF__idFor__619B8048" Association="proyectoDBModel.FK__preguntaF__idFor__619B8048">
+      <End Role="formulario" EntitySet="formularios" />
+      <End Role="preguntaFormulario" EntitySet="preguntaFormularios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__respuesta__idFor__5629CD9C" Association="proyectoDBModel.FK__respuesta__idFor__5629CD9C">
+      <End Role="formulario" EntitySet="formularios" />
+      <End Role="respuestaFormulario" EntitySet="respuestaFormularios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__preguntaF__idSec__628FA481" Association="proyectoDBModel.FK__preguntaF__idSec__628FA481">
+      <End Role="formularioSeccion" EntitySet="formularioSeccions" />
+      <End Role="preguntaFormulario" EntitySet="preguntaFormularios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__respuesta__idPro__571DF1D5" Association="proyectoDBModel.FK__respuesta__idPro__571DF1D5">
+      <End Role="proyecto" EntitySet="proyectoes" />
+      <End Role="respuestaFormulario" EntitySet="respuestaFormularios" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="proyectoDBModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <EntitySet Name="respuestaFormularioDetalles" EntityType="proyectoDBModel.respuestaFormularioDetalle" />
+    <AssociationSet Name="FK__respuesta__idFor__75A278F5" Association="proyectoDBModel.FK__respuesta__idFor__75A278F5">
+      <End Role="formulario" EntitySet="formularios" />
+      <End Role="respuestaFormularioDetalle" EntitySet="respuestaFormularioDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__respuesta__idSec__74AE54BC" Association="proyectoDBModel.FK__respuesta__idSec__74AE54BC">
+      <End Role="formularioSeccion" EntitySet="formularioSeccions" />
+      <End Role="respuestaFormularioDetalle" EntitySet="respuestaFormularioDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__respuesta__idPre__73BA3083" Association="proyectoDBModel.FK__respuesta__idPre__73BA3083">
+      <End Role="preguntaFormulario" EntitySet="preguntaFormularios" />
+      <End Role="respuestaFormularioDetalle" EntitySet="respuestaFormularioDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__respuesta__idFor__76969D2E" Association="proyectoDBModel.FK__respuesta__idFor__76969D2E">
+      <End Role="respuestaFormulario" EntitySet="respuestaFormularios" />
+      <End Role="respuestaFormularioDetalle" EntitySet="respuestaFormularioDetalles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="proyectoDBModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="proyectoDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="proyectoDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="proyectoDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="proyectoDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="proyectoes" Relationship="proyectoDBModel.FK__proyecto__idClie__46E78A0C" FromRole="AspNetUser" ToRole="proyecto" />
+    <NavigationProperty Name="AspNetRoles" Relationship="proyectoDBModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+  </EntityType>
+  <EntityType Name="formulario">
+    <Key>
+      <PropertyRef Name="idFormulario" />
+    </Key>
+    <Property Name="idFormulario" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formularioSeccions" Relationship="proyectoDBModel.FK__formulari__idFor__5EBF139D" FromRole="formulario" ToRole="formularioSeccion" />
+    <NavigationProperty Name="preguntaFormularios" Relationship="proyectoDBModel.FK__preguntaF__idFor__619B8048" FromRole="formulario" ToRole="preguntaFormulario" />
+    <NavigationProperty Name="respuestaFormularios" Relationship="proyectoDBModel.FK__respuesta__idFor__5629CD9C" FromRole="formulario" ToRole="respuestaFormulario" />
+    <NavigationProperty Name="respuestaFormularioDetalles" Relationship="proyectoDBModel.FK__respuesta__idFor__75A278F5" FromRole="formulario" ToRole="respuestaFormularioDetalle" />
+  </EntityType>
+  <EntityType Name="formularioSeccion">
+    <Key>
+      <PropertyRef Name="idSeccion" />
+    </Key>
+    <Property Name="idSeccion" Type="Int32" Nullable="false" />
+    <Property Name="idFormulario" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formulario" Relationship="proyectoDBModel.FK__formulari__idFor__5EBF139D" FromRole="formularioSeccion" ToRole="formulario" />
+    <NavigationProperty Name="preguntaFormularios" Relationship="proyectoDBModel.FK__preguntaF__idSec__628FA481" FromRole="formularioSeccion" ToRole="preguntaFormulario" />
+    <NavigationProperty Name="respuestaFormularioDetalles" Relationship="proyectoDBModel.FK__respuesta__idSec__74AE54BC" FromRole="formularioSeccion" ToRole="respuestaFormularioDetalle" />
+  </EntityType>
+  <EntityType Name="preguntaFormulario">
+    <Key>
+      <PropertyRef Name="idPregunta" />
+    </Key>
+    <Property Name="idPregunta" Type="Int32" Nullable="false" />
+    <Property Name="idFormulario" Type="Int32" Nullable="false" />
+    <Property Name="idSeccion" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formulario" Relationship="proyectoDBModel.FK__preguntaF__idFor__619B8048" FromRole="preguntaFormulario" ToRole="formulario" />
+    <NavigationProperty Name="formularioSeccion" Relationship="proyectoDBModel.FK__preguntaF__idSec__628FA481" FromRole="preguntaFormulario" ToRole="formularioSeccion" />
+    <Property Name="respuesta" Type="Int32" />
+    <NavigationProperty Name="respuestaFormularioDetalles" Relationship="proyectoDBModel.FK__respuesta__idPre__73BA3083" FromRole="preguntaFormulario" ToRole="respuestaFormularioDetalle" />
+  </EntityType>
+  <EntityType Name="proyecto">
+    <Key>
+      <PropertyRef Name="idProyecto" />
+    </Key>
+    <Property Name="idProyecto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCliente" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="proyectoDBModel.FK__proyecto__idClie__46E78A0C" FromRole="proyecto" ToRole="AspNetUser" />
+    <NavigationProperty Name="respuestaFormularios" Relationship="proyectoDBModel.FK__respuesta__idPro__571DF1D5" FromRole="proyecto" ToRole="respuestaFormulario" />
+    <Property Name="fechaCreacion" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="respuestaFormulario">
+    <Key>
+      <PropertyRef Name="idFormularioRespuesta" />
+    </Key>
+    <Property Name="idFormularioRespuesta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFormulario" Type="Int32" Nullable="false" />
+    <Property Name="idProyecto" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formulario" Relationship="proyectoDBModel.FK__respuesta__idFor__5629CD9C" FromRole="respuestaFormulario" ToRole="formulario" />
+    <NavigationProperty Name="proyecto" Relationship="proyectoDBModel.FK__respuesta__idPro__571DF1D5" FromRole="respuestaFormulario" ToRole="proyecto" />
+    <NavigationProperty Name="respuestaFormularioDetalles" Relationship="proyectoDBModel.FK__respuesta__idFor__76969D2E" FromRole="respuestaFormulario" ToRole="respuestaFormularioDetalle" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="proyectoDBModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="proyectoDBModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="proyectoDBModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="proyectoDBModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__proyecto__idClie__46E78A0C">
+    <End Type="proyectoDBModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="proyectoDBModel.proyecto" Role="proyecto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="proyecto">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__formulari__idFor__5EBF139D">
+    <End Type="proyectoDBModel.formulario" Role="formulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.formularioSeccion" Role="formularioSeccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formulario">
+        <PropertyRef Name="idFormulario" />
+      </Principal>
+      <Dependent Role="formularioSeccion">
+        <PropertyRef Name="idFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__preguntaF__idFor__619B8048">
+    <End Type="proyectoDBModel.formulario" Role="formulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.preguntaFormulario" Role="preguntaFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formulario">
+        <PropertyRef Name="idFormulario" />
+      </Principal>
+      <Dependent Role="preguntaFormulario">
+        <PropertyRef Name="idFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__respuesta__idFor__5629CD9C">
+    <End Type="proyectoDBModel.formulario" Role="formulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormulario" Role="respuestaFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formulario">
+        <PropertyRef Name="idFormulario" />
+      </Principal>
+      <Dependent Role="respuestaFormulario">
+        <PropertyRef Name="idFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__preguntaF__idSec__628FA481">
+    <End Type="proyectoDBModel.formularioSeccion" Role="formularioSeccion" Multiplicity="1" />
+    <End Type="proyectoDBModel.preguntaFormulario" Role="preguntaFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formularioSeccion">
+        <PropertyRef Name="idSeccion" />
+      </Principal>
+      <Dependent Role="preguntaFormulario">
+        <PropertyRef Name="idSeccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__respuesta__idPro__571DF1D5">
+    <End Type="proyectoDBModel.proyecto" Role="proyecto" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormulario" Role="respuestaFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proyecto">
+        <PropertyRef Name="idProyecto" />
+      </Principal>
+      <Dependent Role="respuestaFormulario">
+        <PropertyRef Name="idProyecto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="proyectoDBModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="proyectoDBModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityType Name="respuestaFormularioDetalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPreguntaFormulario" Type="Int32" Nullable="false" />
+    <Property Name="idSeccionFormulario" Type="Int32" Nullable="false" />
+    <Property Name="idFormulario" Type="Int32" Nullable="false" />
+    <Property Name="idFormularioRespuesta" Type="Int32" Nullable="false" />
+    <Property Name="pregunta" Type="Int32" Nullable="false" />
+    <Property Name="observacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formulario" Relationship="proyectoDBModel.FK__respuesta__idFor__75A278F5" FromRole="respuestaFormularioDetalle" ToRole="formulario" />
+    <NavigationProperty Name="formularioSeccion" Relationship="proyectoDBModel.FK__respuesta__idSec__74AE54BC" FromRole="respuestaFormularioDetalle" ToRole="formularioSeccion" />
+    <NavigationProperty Name="preguntaFormulario" Relationship="proyectoDBModel.FK__respuesta__idPre__73BA3083" FromRole="respuestaFormularioDetalle" ToRole="preguntaFormulario" />
+    <NavigationProperty Name="respuestaFormulario" Relationship="proyectoDBModel.FK__respuesta__idFor__76969D2E" FromRole="respuestaFormularioDetalle" ToRole="respuestaFormulario" />
+  </EntityType>
+  <Association Name="FK__respuesta__idFor__75A278F5">
+    <End Type="proyectoDBModel.formulario" Role="formulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormularioDetalle" Role="respuestaFormularioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formulario">
+        <PropertyRef Name="idFormulario" />
+      </Principal>
+      <Dependent Role="respuestaFormularioDetalle">
+        <PropertyRef Name="idFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__respuesta__idSec__74AE54BC">
+    <End Type="proyectoDBModel.formularioSeccion" Role="formularioSeccion" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormularioDetalle" Role="respuestaFormularioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formularioSeccion">
+        <PropertyRef Name="idSeccion" />
+      </Principal>
+      <Dependent Role="respuestaFormularioDetalle">
+        <PropertyRef Name="idSeccionFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__respuesta__idPre__73BA3083">
+    <End Type="proyectoDBModel.preguntaFormulario" Role="preguntaFormulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormularioDetalle" Role="respuestaFormularioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="preguntaFormulario">
+        <PropertyRef Name="idPregunta" />
+      </Principal>
+      <Dependent Role="respuestaFormularioDetalle">
+        <PropertyRef Name="idPreguntaFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__respuesta__idFor__76969D2E">
+    <End Type="proyectoDBModel.respuestaFormulario" Role="respuestaFormulario" Multiplicity="1" />
+    <End Type="proyectoDBModel.respuestaFormularioDetalle" Role="respuestaFormularioDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="respuestaFormulario">
+        <PropertyRef Name="idFormularioRespuesta" />
+      </Principal>
+      <Dependent Role="respuestaFormularioDetalle">
+        <PropertyRef Name="idFormularioRespuesta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

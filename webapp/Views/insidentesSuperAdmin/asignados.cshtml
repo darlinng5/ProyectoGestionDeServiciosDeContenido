@@ -1,0 +1,117 @@
+﻿@model IEnumerable<SmartAdminMvc.Models.insidentesModelo>
+
+@{
+    ViewBag.Title = "asignados";
+}
+
+<h2>asignados</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaSolicitud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaTomado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaCierre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breveDescripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrePriorizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreDepartamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreDeUsuarioResolvioInsidente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.problemaResuelto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPriorizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idDepartamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idUsuarioCreoInsidente)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaSolicitud)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaTomado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaCierre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.breveDescripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombrePriorizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreDepartamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreDeUsuarioResolvioInsidente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.problemaResuelto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPriorizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idDepartamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuarioCreoInsidente)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

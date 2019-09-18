@@ -1,0 +1,864 @@
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.pdb
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\WebGrease.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csprojResolveAssemblyReference.cache
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\desarrolladores20\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\WebGrease.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csprojResolveAssemblyReference.cache
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Jose Peraza\Desktop\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\WebGrease.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csprojResolveAssemblyReference.cache
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Darlin\Desktop\RecursosBiblioteca\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\WebGrease.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlcese40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceqp40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceme40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceca40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlcese40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceme40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceca40.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Owin.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\Tesoreria\Downloads\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\WebGrease.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Helpers.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Mvc.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Optimization.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ASP.NetMVC5_Full_Version\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\MySql.Data.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Helpers.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Mvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Optimization.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\WebGrease.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Google.Protobuf.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\MySql.Data.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Helpers.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Mvc.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Optimization.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\HonduMallAdministracion\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\MySql.Data.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Helpers.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Mvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Optimization.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\WebGrease.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Google.Protobuf.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\MySql.Data.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Helpers.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Mvc.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Optimization.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\MiCuenta HonduMall\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\SmartAdminMvc.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlcese40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlceme40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\sqlceca40.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Antlr3.Runtime.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\MySql.Data.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Newtonsoft.Json.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Owin.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Helpers.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Mvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Optimization.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\WebGrease.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Google.Protobuf.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\MySql.Data.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\Newtonsoft.Json.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Helpers.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Mvc.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Optimization.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\Tesoreria\Documents\Proyectos Visual\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\SmartAdminMvc.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\SmartAdminMvc.pdb
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlcese40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlceqp40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlceme40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\sqlceca40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlcese40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlceme40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\sqlceca40.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Antlr3.Runtime.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Newtonsoft.Json.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Owin.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Helpers.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Mvc.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Optimization.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Razor.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\WebGrease.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Google.Protobuf.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\MySql.Data.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\Newtonsoft.Json.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Helpers.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Mvc.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Optimization.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.Razor.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\DNG\Desktop\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\DNG\Desktop\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\DNG\Desktop\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\DNG\Desktop\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\DNG\Desktop\ProyectoBD\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\SmartAdminMvc.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\SmartAdminMvc.pdb
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlcese40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlceqp40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlceme40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\sqlceca40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlcese40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlceme40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\sqlceca40.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Antlr3.Runtime.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Newtonsoft.Json.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Owin.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Helpers.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Mvc.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Optimization.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Razor.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\WebGrease.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\Newtonsoft.Json.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Helpers.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Mvc.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Optimization.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.Razor.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\DNG\Documents\GitHub\proyectobd\webapp\bin\DotNet.Highcharts.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\SmartAdminMvc.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\SmartAdminMvc.pdb
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlcese40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlceqp40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlceme40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\sqlceca40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlcese40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlceme40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\sqlceca40.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Antlr3.Runtime.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\DotNet.Highcharts.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Newtonsoft.Json.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Owin.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Helpers.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Mvc.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Optimization.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Razor.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\WebGrease.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\Newtonsoft.Json.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Helpers.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Mvc.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Optimization.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.Razor.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\DNG\Documents\GitHub\palacasa\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\SmartAdminMvc.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\SmartAdminMvc.pdb
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlcese40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlceqp40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlceme40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\sqlceca40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlcese40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlceme40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\sqlceca40.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Antlr3.Runtime.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\DotNet.Highcharts.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Owin.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Optimization.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Razor.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\WebGrease.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.Razor.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\User\Documents\GitHub\palacasa2019\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\SmartAdminMvc.dll.config
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\SmartAdminMvc.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\SmartAdminMvc.pdb
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\SmartAdminMvc.dll.CodeAnalysisLog.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\SmartAdminMvc.dll.lastcodeanalysissucceeded
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlcese40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlceqp40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlceme40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlceer40EN.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlcecompact40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\sqlceca40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlcese40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlceqp40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlceme40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlceer40EN.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlcecompact40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\sqlceca40.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\Microsoft.VC90.CRT\README_ENU.txt
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Antlr3.Runtime.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\DotNet.Highcharts.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.SqlServerCompact.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Owin.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Data.SqlServerCe.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Optimization.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Razor.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\WebGrease.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Antlr3.Runtime.pdb
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\EntityFramework.SqlServerCompact.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Optimization.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.Razor.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.pdb
+C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache

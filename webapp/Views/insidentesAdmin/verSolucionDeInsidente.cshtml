@@ -1,0 +1,72 @@
+﻿@model SmartAdminMvc.insidenteRespuesta
+
+@{
+    ViewBag.Title = "verSolucionDeInsidente";
+}
+
+
+
+<div>
+ 
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Fecha de Solicitud")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidente.fechaSolicitud)
+        </dd>
+        <dt>
+            @Html.DisplayName("Fecha de Tomado")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidente.fechaTomado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaRespuesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaRespuesta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.resolvioProblema)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resolvioProblema)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Breve descripcion")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidente.breveDescripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Solucion")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Usuario Creo Insidente")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.insidente.AspNetUser.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Regresar", "misinsidentesresueltos")
+</p>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e77bf5c46a864711b4b1a72063222b2b" Name="Diagram1">
+        <EntityTypeShape EntityType="bdpalacasaModel.mensajesContacto" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpalacasaModel.servicioSolicitudSinAutenticar" Width="1.5" PointX="5.125" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpalacasaModel.servicioTipo" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="bdpalacasaModel.FK__servicioS__idSer__3A81B327" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="bdpalacasaModel.servicioHora" Width="1.5" PointX="3.375" PointY="6.875" />
+        <AssociationConnector Association="bdpalacasaModel.FK__servicioS__horaI__3F466844" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

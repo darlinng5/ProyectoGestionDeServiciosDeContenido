@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="32f3ab55a47c4a0983e923d762b428a1" Name="Diagram1">
+        <EntityTypeShape EntityType="InsidentesBDModel.empresaDepartamento" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsidentesBDModel.insidenteCategoria" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsidentesBDModel.insidentePriorizacion" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="InsidentesBDModel.C__MigrationHistory" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="InsidentesBDModel.AspNetRole" Width="1.5" PointX="3.375" PointY="8.125" />
+        <EntityTypeShape EntityType="InsidentesBDModel.AspNetUserClaim" Width="1.5" PointX="7.875" PointY="11.5" />
+        <EntityTypeShape EntityType="InsidentesBDModel.AspNetUserLogin" Width="1.5" PointX="7.875" PointY="14.25" />
+        <EntityTypeShape EntityType="InsidentesBDModel.AspNetUser" Width="1.5" PointX="5.625" PointY="6.875" />
+        <EntityTypeShape EntityType="InsidentesBDModel.insidente" Width="1.5" PointX="7.875" PointY="3.875" />
+        <AssociationConnector Association="InsidentesBDModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="InsidentesBDModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idUsu__5070F446" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idDep__4F7CD00D" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idCat__4E88ABD4" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idPri__4D94879B" />
+        <AssociationConnector Association="InsidentesBDModel.AspNetUserRoles" />
+        <EntityTypeShape EntityType="InsidentesBDModel.insidenteRespuesta" Width="1.5" PointX="10.125" PointY="6.125" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idUsu__5441852A" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idIns__534D60F1" />
+        <AssociationConnector Association="InsidentesBDModel.FK__insidente__idUsu__5AEE82B9" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

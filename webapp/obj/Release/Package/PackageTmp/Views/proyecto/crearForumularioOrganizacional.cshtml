@@ -1,0 +1,1072 @@
+﻿@model SmartAdminMvc.Models.diagnosticoOrganizacionalModelo
+
+@{
+    ViewBag.Title = "crearForumularioOrganizacional";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <center><h2>Diagnostico Organizacional</h2></center>
+        <center><p>El proposito de este cuestionario es determinar la situacion actual de la Empresa y encontrar oportunidad de mejora</p></center>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Planeacion Estrategica</a></li>
+            <li><a data-toggle="tab" href="#menu1">Estructura Organizativa</a></li>
+            <li><a data-toggle="tab" href="#menu2">Procesos, productos y servicios</a></li>
+            <li><a data-toggle="tab" href="#menu3">Finanzas</a></li>
+        </ul>
+
+
+
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="col-md-10">
+                    <h6><strong>1.01 Conozco la Visión institucional</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo101, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo101, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs101, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs101, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <h6><strong>1.02 Estoy de acuerdo con esa Visión</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo102, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo102, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs102, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs102, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <h6><strong>1.03 Conozco la Misión institucional</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo103, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo104, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs103, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs103, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.04 Estoy de acuerdo con esa Misión</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo104, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo104, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs104, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs104, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.05 Conozco los objetivos institucionales</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo105, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo105, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs105, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs105, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.06 Estoy de acuerdo con esos objetivos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo106, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo105, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs106, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs106, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <h6><strong>1.07 Yo me integro fuertemente al esfuerzo por alcanzar esas metas</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo107, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo107, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs107, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs107, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="col-md-10">
+                    <h6><strong>1.08 Esas metas las establecemos entre todos (Y me incluyen)</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo108, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo108, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs108, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs108, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.09 Esas metas se revisan y actualizan periódicamente</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo109, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo109, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs109, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs109, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.10 Compartimos esas metas con nuestros colaboradores </strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo110, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo110, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs110, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs110, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.11 Ellos se integran fuertemente al esfuerzo por alcanzarlas </strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo111, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo111, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs111, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs111, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>1.12 Nuestro plan considera a clientes, proveedores y competidores </strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo112, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo112, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs112, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs112, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+            <div id="menu1" class="tab-pane fade">
+
+
+                <div class="col-md-10">
+                    <h6><strong>2.01 Conozco el organigrama de la empresa</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo201, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo201, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs201, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs201, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <h6><strong>2.02 Sé cómo y porqué está conformado de la manera en que lo está</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo202, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo202, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs202, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs202, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.03 Estoy de acuerdo con dicha estructura</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo203, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo203, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs203, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs203, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.04 Me siento parte fundamental de la estructura</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo204, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo204, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs204, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs204, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.05 El organigrama lo diseñamos entre todos (Yo incluido)</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo205, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo205, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs205, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs205, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="col-md-10">
+                    <h6><strong>2.06 Esa estructura se revisa y actualiza periódicamente</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo206, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo206, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs206, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs206, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <h6><strong>2.07 He recibido capacitaciones en cuanto al organigrama</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo207, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo207, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs207, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs207, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.08 Conozco y entiendo los niveles jerárquicos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo208, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo208, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs208, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs208, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.09 Nuestros colaboradores conocen y entienden dichos niveles</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo209, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo209, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs209, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs209, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.10 Estoy de acuerdo con mi nivel jerárquico</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo210, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo210, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs210, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs210, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.11 Todos en la Empresa tenemos oportunidades para ascender</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo211, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo211, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs212, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs211, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.12 Todos en la Empresa tenemos contratos laborales suscritos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo212, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo212, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs212, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs212, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.13 Existe un manual de cargos para nuestra estructura</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo213, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo213, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs213, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs213, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.14 Existe una descripción de funciones para mi cargo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo214, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo214, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs214, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs214, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.15 Me siento orgulloso de trabajar en esta empresa</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo215, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo215, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs215, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs215, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.16 Me siento motivado para seguir trabajando aquí</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo216, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo216, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs216, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs216, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.17 Soy apoyado para trabajar bien y para seguir haciéndolo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo217, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo217, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs217, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs217, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.18 Tenemos un excelente clima laboral</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo218, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo218, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs218, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs218, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.19 Nuestros colaboradores se sienten orgullosos de trabajar aquí</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo219, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo219, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs219, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs219, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.20 Nuestros colaboradores desean seguir trabajando aquí</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo220, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo220, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs220, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs220, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.21 Si yo tuviera otra oportunidad, preferiría trabajar en otro lado</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo221, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo221, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs221, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs221, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.22 Mis problemas de trabajo son siempre bien atendidos y resueltos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo222, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo222, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs222, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs222, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.23 Mis problemas personales son escuchados y se me apoya para resolverlos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo223, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo223, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs223, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs223, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.24 Los problemas de trabajo de los colaboradores son siempre atendidos y resueltos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo224, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo224, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs224, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs224, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.25 Los problemas personales de los colaboradores son escuchados y les apoyamos en ello</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo225, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo225, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs225, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs225, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.26 Los problemas de nuestros clientes son siempre atendidos y resueltos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo226, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo226, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs226, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs226, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.27 Yo sé resolver los problemas de nuestros clientes y proveedores</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo227, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo227, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs227, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs227, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.28 Tengo una excelente comunicación con mis superiores y con mis compañeros</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo228, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo228, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs228, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs228, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.29 Confío plenamente en mis superiores</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo229, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo229, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs229, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs229, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.30 Confío plenamente en mis compañeros</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo230, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo220, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs230, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs230, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.31 Las relaciones familiares están bien separadas de las relaciones laborales</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo231, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo231, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs231, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs231, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.32 Los problemas laborales no afectan nuestras relaciones familiares</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo232, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo232, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs232, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs232, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.33 La Empresa está bien dirigida</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo233, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo233, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs233, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs233, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.34 Estoy satisfecho con mi remuneración</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo234, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo234, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs234, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs234, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.35 Todos mis compañeros están satisfechos con su remuneración</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo235, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo235, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs235, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs235, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.36 Existen incentivos adicionales aparte de la remuneración normal</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo236, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo236, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs236, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs236, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.37 El logro de objetivos y metas es recompensado con incentivos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo237, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo237, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs237, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs237, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.38 Eventualmente ha habido inequidad o injusticia en algunos sueldos o incentivos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo238, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo238, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs238, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs238, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.39 El gerente general es un buen líder</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo239, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo239, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs239, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs239, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.40 Los gerentes de área son buenos líderes</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo240, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo240, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs240, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs240, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.41 Yo soy un buen líder</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo241, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo241, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs241, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs241, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.42 Nuestros colaboradores sienten que ejercemos un buen liderazgo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo242, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo242, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs242, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs231, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.43 Tenemos jefes, no líderes</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo243, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo243, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs243, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs243, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.44 Estoy bien capacitado para realizar mis tareas</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo244, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo244, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs244, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs244, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.45 Todos mis compañeros están bien capacitados para realizar sus tareas</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo245, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo245, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs245, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs245, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>2.46 La Empresa nos somete a un buen plan de capacitación</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo231, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo231, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs231, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs231, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="menu2" class="tab-pane fade">
+
+                <div class="col-md-10">
+                    <h6><strong>3.01 Conozco los productos y servicios que ofrecemos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo301, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo301, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs301, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs301, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.02 Prestamos servicios de alta calidad</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo302, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo302, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs302, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs302, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.03 Somos los mejores prestando estos servicios en el mercado actual</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo303, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo303, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs303, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs303, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.04 Podemos mejorar en cuanto a nuestro nivel de servicio</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo304, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo304, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs304, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs304, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.05 Algunos de nuestros competidores prestan mejores productos o servicios</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo305, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo305, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs305, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs305, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.06 Tenemos excelentes proveedores que nos apoyan en nuestra gestión</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo305, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo305, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs305, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs305, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.07 Estamos altamente tecnificados</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo307, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo307, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs307, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs307, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.08 Estamos siempre innovando y creando mejoras en nuestros servicios</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo308, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo308, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs308, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs308, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.09 Existe un manual de procedimientos para nuestra estructura</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo309, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo309, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs309, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs309, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.10 Los objetivos de la empresa están ligados a las tareas que realizo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo310, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo310, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs310, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs310, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.11 Cuento con todos los medios, herramientas y equipo, para realizar mi trabajo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo311, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo311, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs311, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs311, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.12 Todos mis compañeros cuentan con todos los medios y herramientas para realizar su trabajo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo312, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo312, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs312, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs312, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.13 En la Empresa miden nuestro desempeño en base a resultados</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo313, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo313, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs313, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs313, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.14 En la Empresa miden nuestro desempeño en base a otros indicadores</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo314, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo314, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs314, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs314, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.15 Tengo demasiado trabajo por realizar</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo315, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo315, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs315, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs315, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.16 Mi líder tiene demasiado trabajo por realizar</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo316, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo316, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs316, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs316, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.17 Mis compañeros tienen demasiado trabajo por realizar</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo317, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo317, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs317, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs317, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.18 El trabajo y desempeño de todos está siempre bien medido y controlado</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo318, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo318, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs318, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs318, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.19 Se presentan demasiado errores en la ejecución de las labores</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo319, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo319, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs319, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs319, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.20 Ha habido fugas, robos, extravíos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo320, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo320, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs320, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs320, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.21 Ha habido conflictos, peleas, pleitos</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo321, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo321, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs321, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs321, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.22 Ha habido accidentes de trabajo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo322, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo322, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs322, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs322, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.23 Ha habido personas que se enferman debido a su trabajo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo323, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo323, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs323, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs323, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.24 Hemos tenido problemas con el Ministerio del Trabajo</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo324, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo324, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs324, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs324, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.25 Hemos tenido problemas con la Municipalidad</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo325, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo325, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs325, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs325, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>3.26 Hemos tenido problemas con el SAR</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo326, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo326, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs326, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs326, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <div class="col-md-10">
+                    <h6><strong>4.01 Estamos vendiendo bien y bastante</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo401, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo401, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs401, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs401, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.02 Estamos ganando bien y bastante</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo402, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo402, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs402, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs402, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.03 Los costos y gastos están bien registrados y controlados</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo403, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo403, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs403, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs403, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.04 Tenemos un procedimiento contable bien definido y confiable</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo404, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo404, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs404, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs404, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.05 Tenemos un software contable bien establecido y confiable</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo405, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo405, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs405, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs405, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.06 Yo intervengo en los asuntos contables de la Empresa</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo406, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo406, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs406, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs406, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h6><strong>4.07 Yo intervengo en los asuntos financieros de la Empresa</strong></h6>
+                    <div class="col-md-4">
+                        @Html.DropDownListFor(x => x.codigo407, (SelectList)ViewBag.listaOpcion, "Seleccione una opcion", htmlAttributes: new { @class = "form-control", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.codigo407, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.obs407, new { htmlAttributes = new { @class = "form-control", @placeholder = "Observaciones" } })
+                        @Html.ValidationMessageFor(model => model.obs407, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <br />
+                <br />
+                <br />
+                <input type="submit" value="Guardar" class="btn btn-success" />
+                <h6>Puede comprobar en cada pagina pero solo se guardara <br /> el formulario si han completado todos los campos obligatorios</h6>
+            </div>
+        </div>
+    </div>
+}

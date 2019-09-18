@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbplcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tipo" Type="Int32" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="colaboradorDetalle" Relationship="Self.FK__colaborad__idCol__5165187F" FromRole="AspNetUsers" ToRole="colaboradorDetalle" />
+    <NavigationProperty Name="pedidoAutenticadoes" Relationship="Self.FK__pedidoAut__idCli__4CA06362" FromRole="AspNetUsers" ToRole="pedidoAutenticado" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="identidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="colaboradorDetalle">
+    <Key>
+      <PropertyRef Name="idColaborador" />
+    </Key>
+    <Property Name="idColaborador" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="primerNombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="segundoNombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="primerApellido" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="segundoApellido" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="edad" Type="Int32" />
+    <Property Name="habilidades" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="identidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fotoPerfil" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__colaborad__idCol__5165187F" FromRole="colaboradorDetalle" ToRole="AspNetUsers" />
+    <NavigationProperty Name="pedidoAutenticadoes" Relationship="Self.FK__pedidoAut__colab__5535A963" FromRole="colaboradorDetalle" ToRole="pedidoAutenticado" />
+  </EntityType>
+  <EntityType Name="pedidoAutenticado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tipoPlan" Type="Int32" />
+    <Property Name="idCliente" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="direccionExacta" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="observaciones" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRecepcion" Type="DateTime" Precision="3" />
+    <Property Name="fechaServicio" Type="DateTime" Precision="0" />
+    <Property Name="totalTransaccion" Type="Decimal" Precision="9" Scale="2" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="colaboradorId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK__pedidoAut__idCli__4CA06362" FromRole="pedidoAutenticado" ToRole="AspNetUsers" />
+    <NavigationProperty Name="colaboradorDetalle" Relationship="Self.FK__pedidoAut__colab__5535A963" FromRole="pedidoAutenticado" ToRole="colaboradorDetalle" />
+    <NavigationProperty Name="pedidoPlan" Relationship="Self.FK__pedidoAut__tipoP__4BAC3F29" FromRole="pedidoAutenticado" ToRole="pedidoPlan" />
+  </EntityType>
+  <EntityType Name="pedidoExpress">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaSolicitud" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pedidoPlan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="precioUnitario" Type="Decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidadMinimaPedido" Type="Int32" />
+    <NavigationProperty Name="pedidoAutenticadoes" Relationship="Self.FK__pedidoAut__tipoP__4BAC3F29" FromRole="pedidoPlan" ToRole="pedidoAutenticado" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__colaborad__idCol__5165187F">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="colaboradorDetalle" Type="Self.colaboradorDetalle" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="colaboradorDetalle">
+        <PropertyRef Name="idColaborador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidoAut__idCli__4CA06362">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="pedidoAutenticado" Type="Self.pedidoAutenticado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="pedidoAutenticado">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidoAut__colab__5535A963">
+    <End Role="colaboradorDetalle" Type="Self.colaboradorDetalle" Multiplicity="0..1" />
+    <End Role="pedidoAutenticado" Type="Self.pedidoAutenticado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="colaboradorDetalle">
+        <PropertyRef Name="idColaborador" />
+      </Principal>
+      <Dependent Role="pedidoAutenticado">
+        <PropertyRef Name="colaboradorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedidoAut__tipoP__4BAC3F29">
+    <End Role="pedidoPlan" Type="Self.pedidoPlan" Multiplicity="0..1" />
+    <End Role="pedidoAutenticado" Type="Self.pedidoAutenticado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoPlan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="pedidoAutenticado">
+        <PropertyRef Name="tipoPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="dbplcEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="colaboradorDetalles" EntityType="Self.colaboradorDetalle" />
+    <EntitySet Name="pedidoAutenticadoes" EntityType="Self.pedidoAutenticado" />
+    <EntitySet Name="pedidoExpresses" EntityType="Self.pedidoExpress" />
+    <EntitySet Name="pedidoPlans" EntityType="Self.pedidoPlan" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__colaborad__idCol__5165187F" Association="Self.FK__colaborad__idCol__5165187F">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="colaboradorDetalle" EntitySet="colaboradorDetalles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidoAut__idCli__4CA06362" Association="Self.FK__pedidoAut__idCli__4CA06362">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="pedidoAutenticado" EntitySet="pedidoAutenticadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidoAut__colab__5535A963" Association="Self.FK__pedidoAut__colab__5535A963">
+      <End Role="colaboradorDetalle" EntitySet="colaboradorDetalles" />
+      <End Role="pedidoAutenticado" EntitySet="pedidoAutenticadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedidoAut__tipoP__4BAC3F29" Association="Self.FK__pedidoAut__tipoP__4BAC3F29">
+      <End Role="pedidoPlan" EntitySet="pedidoPlans" />
+      <End Role="pedidoAutenticado" EntitySet="pedidoAutenticadoes" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

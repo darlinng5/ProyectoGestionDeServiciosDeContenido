@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "upload";
+}
+
+<script src="~/Scripts/libs/jquery-2.1.1.min.js"></script>
+<link href="~/Content/toastr.css" rel="stylesheet" />
+<h2>SubirArchivo</h2>
+
+<h2 class="text-danger">@ViewBag.Error</h2>
+<h2 class="text-danger">@ViewBag.extencion</h2>
+<h2 class="text-danger">@ViewBag.Tamanio</h2>
+
+<div id="cargoCorrecto">
+	<h2 class="text-success">@ViewBag.Correcto</h2>
+</div>
+
+
+
+
+
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#pane1" data-toggle="tab">Mis archivos</a></li>
+		<li><a href="#pane2" data-toggle="tab">Subir Archivo</a></li>
+		<li><a href="#pane3" data-toggle="tab">Tab 3</a></li>
+		<li><a href="#pane4" data-toggle="tab">Tab 4</a></li>
+	</ul>
+	<div class="tab-content">
+        <div id="pane1" class="tab-pane active">
+
+            <h4>Todos mis archivos</h4>
+            @Html.Partial("_LoginPartial")
+        </div>
+		<div id="pane2" class="tab-pane">
+			<div class="col-md-2">
+				<form method="post" enctype="multipart/form-data">
+
+					<input type="file" name="file" />
+					<button type="submit" class="btn btn-success" id="btn-subir">Subir Archivo</button>
+				</form>
+
+			</div>
+
+		</div>
+		<div id="pane3" class="tab-pane">
+			<h4>Pane 3 Content</h4>
+		</div>
+		<div id="pane4" class="tab-pane">
+			<h4>Pane 4 Content</h4>
+		</div>
+	</div><!-- /.tab-content -->
+</div><!-- /.tabbable -->
+
+
+<script>
+	$("#btn-subir").click(function () {
+		toastr.success("Atencion","El archivo esta empezando a cargar");
+	})
+
+</script>
+
+<script src="~/Scripts/toastr.js"></script>
+

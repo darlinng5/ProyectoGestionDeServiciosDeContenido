@@ -1,0 +1,633 @@
+﻿
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pa la casas &mdash; Limpieza a un clic</title>
+    <meta name="description" content="Free Bootstrap 4 Template by uicookies.com">
+    <meta name="keywords" content="pa la casa, limpieza por hora, servicios domesticos, servicios de limpieza, servicios">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+    <link href="~/Presentacion/landing/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Presentacion/landing/assets/fonts/ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="~/Presentacion/landing/assets/fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Presentacion/landing/assets/css/slick.css" rel="stylesheet" />
+    <link href="~/Presentacion/landing/assets/css/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+    <link href="~/Presentacion/landing/assets/css/helpers.css" rel="stylesheet" />
+    <link href="~/Presentacion/landing/assets/css/style.css" rel="stylesheet" />
+
+    <link href="~/Presentacion/landing/assets/css/landing-2.css" rel="stylesheet" />
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pa la casa</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="ion-navicon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="probootstrap-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#section-home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-features">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-reviews">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-pricing">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-faq">Preguntas</a></li>
+                    <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="#" onclick="AddNewProvider2()"><span class="pb_rounded-4 px-4">Entrar</span></a></li>
+                    <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="#" onclick="AddNewProvider()"><span class="pb_rounded-4 px-4">Registrar</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- END nav -->
+
+
+    <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="section-home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="heading mb-3">Servicios Domesticos a un clic de solución.</h3>
+                    <div class="sub-heading">
+                        <p class="mb-4">Tenemos a las mejores profesionales de servicios domesticos que te ayudaran a mantener impecable tu hogar</p>
+                        <p>Puedes solicitar los servicios por hora o elegir entre los paquetes mensuales y semanales que hemos preparado especialmente para ti.</p>
+                        <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="#section-pricing"><span class="pb_font-14 text-uppercase pb_letter-spacing-1">Ver Planes</span></a></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5 relative align-self-center">
+                    <form id="NuevaProveedor" action="#" class="bg-white rounded pb_form_v1">
+                        <h4 class="mb-4 mt-0 text-center">Realiza un pedido Express</h4>
+                        <div class="form-group">
+                            <input id="Name" type="text" class="form-control pb_height-50 reverse" placeholder="Escriba su nombre">
+                        </div>
+                        <div class="form-group">
+                            <input id="Phone" type="text" class="form-control pb_height-50 reverse" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <input id="Adress" type="text" class="form-control pb_height-50 reverse" placeholder="Direccion Completa">
+                        </div>
+                        <div class="form-group">
+                            <input id="service" type="text" class="form-control pb_height-50 reverse" placeholder="Escriba total de horas y fecha de servicio">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="btnSubmit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue" value="Solicitar">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+    <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-features">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Features</strong></h5>
+                    <h2>Servicios</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-home pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">Servicios Domesticos</h5>
+                            <p class="text-sans-serif">Ofrecemos servicios domesticos para hogares ya sea por Hora, semanal o mensual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-document pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">Empresas</h5>
+                            <p class="text-sans-serif">Ofrecemos nuestros servicios a empresas con planes a su medida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-android-people pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">Personal altamente capacitado</h5>
+                            <p class="text-sans-serif">Todas nuestras colaboradoras estan especialmente capacitadas para ofrecerte un servicio de calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-android-checkmark-circle pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">FeedBack</h5>
+                            <p class="text-sans-serif">Queremos mantener nuestra imagen!!! Tu como cliente tienes la posibilidad de hacer puntuaciones a la persona que llegue a realizar las actividades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-android-list pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">Implementos</h5>
+                            <p class="text-sans-serif">Te brindamos los implementos necesarios para que nuestra colaboradora pueda realizar su trabajo de la mejor manera.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-left">
+                        <div class="pb_icon"><i class="ion-arrow-return-right pb_icon-gradient"></i></div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 heading">Devoluciones</h5>
+                            <p class="text-sans-serif">En caso de un inconveniente nosotros te devolvemos tu dinero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+    <section class="pb_section pb_slant-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <img src="~/Presentacion/landing/assets/images/banner.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-8 pl-md-5 pl-sm-0">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Trabaja con nosotros.</h2>
+                            <p class="pb_font-20">Obten multiples beneficios!!!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-android-attach pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Capacitacion constante</h3>
+                                    <p class="text-sans-serif pb_font-16">Al formar parte de nuestra familia podras formarte en multiples temas que te ayudaran a tu vida laboral y/o personal.</p>
+                                </div>
+                            </div>
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-android-color-palette pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Beneficios de ley</h3>
+                                    <p class="text-sans-serif pb_font-16">Toda nuestra familia de Pa la casa cuenta con salario atractivo, seguro social, prestaciones y demas beneficios de ley,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-android-bicycle pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Transporte Gratis</h3>
+                                    <p class="text-sans-serif pb_font-16">Sabemos que necesitas movilizarte hacia donde esten nuestros clientes por lo tanto te brindamos transporte para tu comodidad.</p>
+                                </div>
+                            </div>
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-clock  pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Disponibilidad de horario</h3>
+                                    <p class="text-sans-serif pb_font-16">Ofrecemos variados horarios de trabajo para que sigas haciendo tus demas deberes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+    <section class="pb_section bg-light pb_slant-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-2">
+                    <img src="~/Presentacion/landing/assets/images/bannerhogar.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-8 pr-md-5 pr-sm-0 order-1  mb-5">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Muchos mas beneficios</h2>
+                            <p class="pb_font-20">¡¡¡Para garantizar la mayor satisfacción posible queremos ofrecerte mas beneficios!!!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-android-expand pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Acumulas horas por referido</h3>
+                                    <p class="text-sans-serif pb_font-16">Al solicitar nuestros servicios te asignamos un numero de cliente. Tus referidos nos daran este numero y tu recibes horas de servicio gratis.</p>
+                                </div>
+                            </div>
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-share pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Ganas puntuando nuestro servicio.</h3>
+                                    <p class="text-sans-serif pb_font-16">Si ya eres cliente y hablas de nuestro servicio en las diferentes redes sociales acumulas minutos de servicio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-speedometer-outline pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Sistema Web y Movil</h3>
+                                    <p class="text-sans-serif pb_font-16">Para tu mayor comodidad estamos trabajando constantemente para que puedas adquirir nuestros servicios totalmente en línea y muy próximamente desde nuestra Aplicación Móvil</p>
+                                </div>
+                            </div>
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-laptop  pb_icon-gradient"></i></div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Pagos electronicos</h3>
+                                    <p class="text-sans-serif pb_font-16">Puedes hacer los pagos de manera electrónica, al realizar una solicitud de servicio nosotros te enviamos un link a tu WhatsApp, Mensaje o Correo electrónico para que puedas realizar el pago con tu tarjeta de debito o crédito..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+    <section class="pb_section pb_slant-light pb_pb-220" id="section-reviews">
+        <div class="container">
+            <div class="row justify-content-center mb-1">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Testimonios</strong></h5>
+                    <h2>Testimonios de algunos clientes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="pb_slide_testimonial_sync_v1">
+                        <div class="pb_slider_content js-pb_slider_content2">
+                            <div>
+                                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                    <div class="media-body">
+                                        <div class="quote">&ldquo;</div>
+                                        <blockquote class="mb-5">Utilice los servicios de Pa la casa por recomendacion de una amiga, la verdad que ofrecen un espectacular servicio.</blockquote>
+                                        <p>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star-half text-warning"></i>
+                                            <i class="ion-ios-star-outline text-warning"></i>
+                                        </p>
+                                        <h3 class="heading">Francisca Pavon</h3>
+                                        <span class="subheading">Martinez</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                    <div class="media-body">
+                                        <div class="quote">&ldquo;</div>
+                                        <blockquote class="mb-5">Excelente Servicio. Totalmente recomendable.</blockquote>
+                                        <p>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star-half text-warning"></i>
+                                            <i class="ion-ios-star-outline text-warning"></i>
+                                        </p>
+                                        <h3 class="heading">Fatima Barahona</h3>
+                                        <span class="subheading">Gonzales</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                    <div class="media-body">
+                                        <div class="quote">&ldquo;</div>
+                                        <blockquote class="mb-5">Gracias a su sistema de fidelidad muchas veces mis solicitudes de servicio salen gratis</blockquote>
+                                        <p>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star-half text-warning"></i>
+                                            <i class="ion-ios-star-outline text-warning"></i>
+                                        </p>
+                                        <h3 class="heading">Patricia Ramirez</h3>
+                                        <span class="subheading">Paty</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                    <div class="media-body">
+                                        <div class="quote">&ldquo;</div>
+                                        <blockquote class="mb-5">Me encanta la amabilidad con la cual las personas vienen a mi hogar a realizar su trabajo</blockquote>
+                                        <p>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star text-warning"></i>
+                                            <i class="ion-ios-star-half text-warning"></i>
+                                            <i class="ion-ios-star-outline text-warning"></i>
+                                        </p>
+                                        <h3 class="heading">Angelica Zelaya</h3>
+                                        <span class="subheading">angi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="pb_slider_nav js-pb_slider_nav2">
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="~/Presentacion/landing/assets/images/testimonio1.png" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="~/Presentacion/landing/assets/images/testimonio2.jpg" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="~/Presentacion/landing/assets/images/testimonio3.jpg" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="~/Presentacion/landing/assets/images/testimonio4.png" alt="Generic placeholder image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END sync_v1 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+    <section class="pb_section bg-light pb_slant-white" id="section-pricing">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Precios</strong></h5>
+                    <h4>Elige un plan</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border text-center bg-white">
+                        <h3>Hora</h3>
+                        <span class="price"><sup>L.</sup>98.93<span>Por Hora</span></span>
+                        <p class="pb_font-15">Solicita nuestros servicios y paga por Hora de lunes a lunes de 8:00 am a 7:00 pm</p>
+                        <p class="mb-0"><a href="#" role="button" class="btn btn-secondary">Aplicar</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border border-primary text-center bg-white">
+                        <h3>Mensual</h3>
+                        <span class="price"><sup>L.</sup>5,950.00<span>Mes</span></span>
+                        <p class="pb_font-15">
+                            Si contratas una persona directamente en alimentacion, sueldo... gastas aproximadamente 14,000.00. Solicita <br />
+                            nuestros servicios y convencete del ahorro.
+                        </p>
+                        <p class="mb-0"><a href="#" role="button" class="btn btn-primary btn-shadow-blue">Aplicar</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border text-center bg-white">
+                        <h3>Semanal</h3>
+                        <span class="price"><sup>L.</sup>1,890.00<span>Semanal</span></span>
+                        <p class="pb_font-15">Solicita el paquete semanal y al igual que en todos nuestros paquetes elige tu las horas y los días de servicio.</p>
+                        <p class="mb-0"><a href="#" role="button" class="btn btn-secondary">Aplicar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDs ection -->
+    <section class="pb_section pb_slant-white" id="section-faq">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2"><strong>Pregunas</strong></h5>
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div id="pb_faq" class="pb_accordion" data-children=".item">
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false" aria-controls="pb_faq2" class="pb_font-22 py-4">¿Donde esta disponible el servicio?</a>
+                            <div id="pb_faq2" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Actualmente nuestros servicios estan disponibles en San Pedro Sula. Si no eres de aqui y deseas saber cuando estaremos en tu ciudad solo ponte en contacto con nosotros y te responderemos lo mas pronto posible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false" aria-controls="pb_faq3" class="pb_font-22 py-4">¿Como puedo seleccionar a la persona que vendrá a realizar los servicios domésticos?</a>
+                            <div id="pb_faq3" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Para que esta opción este disponible para ti deberás registrarte en el sistema. Si haces un pedido Exprés no podrás disfrutar de esta característica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false" aria-controls="pb_faq4" class="pb_font-22 py-4">¿Que pasa si sus servicios no cumplen con mis expectativas?</a>
+                            <div id="pb_faq4" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>No te preocupes. Tienes varias opciones, las cuales serian brindarte el mismo servicio en otro periodo de tiempo, cambiarte en el momento la persona asignada o hacerte un reembolso de tu dinero.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq5" aria-expanded="false" aria-controls="pb_faq5" class="pb_font-22 py-4">¿Es seguro si realizo mi pago en línea?</a>
+                            <div id="pb_faq5" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Todos los pagos en línea son procesados por una empresa especialista en el ramo por lo tanto ten la mayor confianza de la seguridad de la transacción. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8" style="background-image: url(~/Presentacion/landing/assets/images/1900x1200_img_5.jpg)">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 justify-content-center">
+                    <h2 class="heading mb-5 pb_font-40">Unete a nuestra comunidad de usuarios</h2>
+                    <div class="sub-heading">
+                        <p class="mb-4">Enterate de nuevas promociones, servicios, descuentos... y Mas</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <!--   <form action="#" class="bg-white rounded pb_form_v1">-->
+
+                    <div class="bg-white rounded pb_form_v1">
+                        <h5 class="mb-4 mt-0 text-center">Registrate y recibe 3 horas gratis de Servicios Domesticos como bienvenida</h5>
+                        @{ Html.RenderPartial("~/Views/Account/Register.cshtml", new RegisterViewModel()); }
+
+                    </div>
+
+
+
+                    <!--   </form>-->
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="MyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#" class="close" data-dismiss="modal">&times;</a>
+                        <h4>Registrarse</h4>
+                    </div>
+                    <div class="modal-body">
+                        @{ Html.RenderPartial("~/Views/Account/Register.cshtml", new RegisterViewModel()); }
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-primary" data-dismiss="modal" id="r">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MyModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="#" class="close" data-dismiss="modal">&times;</a>
+                        <h4>Iniciar Sesion</h4>
+                    </div>
+                    <div class="modal-body">
+                        @{ Html.RenderPartial("~/Views/Account/Login.cshtml", new LoginViewModel()); }
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-primary" data-dismiss="modal" id="r">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- END section -->
+    <footer class="pb_footer bg-light" role="contentinfo">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p class="pb_font-14">&copy; 2019. All Rights Reserved. <br>  Pa la casa</p>
+                    <p class="pb_font-14">Impulsado por Pa la casa</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- loader -->
+    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff" /></svg></div>
+
+    <script src="~/Presentacion/landing/assets/js/jquery.min.js"></script>
+    <script src="~/Presentacion/landing/assets/js/popper.min.js"></script>
+    <script src="~/Presentacion/landing/assets/js/bootstrap.min.js"></script>
+    <script src="~/Presentacion/landing/assets/js/slick.min.js"></script>
+    <script src="~/Presentacion/landing/assets/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="~/Presentacion/landing/assets/js/jquery.waypoints.min.js"></script>
+
+    <script src="~/Presentacion/landing/assets/js/jquery.easing.1.3.js"></script>
+
+    <script src="~/Presentacion/landing/assets/js/main.js"></script>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var formData = new FormData();
+            formData.append("Name", $("#Name").val());
+            formData.append("Phone", $("#Phone").val());
+            formData.append("service", $("#service").val());
+            formData.append("Adress", $("#Adress").val());
+            $.ajax({
+                url: "/public/save",
+                type: 'POST',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (response) {
+                    alert(response);
+                }
+                
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $('#datatable').dataTable();
+
+        $("[data-toggle=tooltip]").tooltip();
+
+    });
+</script>
+
+<script type="text/javascript">
+    function cargando() {
+        $("#carga").animate({ "opacity": "1" }, 1000, function () { $("#carga").css("display", "Block"); });
+
+    }
+
+    function cerrar() {
+        $("#carga").animate({ "opacity": "0" }, 1000, function () { $("#carga").css("display", "none"); });
+    }
+
+    $(document).ready(function () {
+        window.onload = cerrar;
+        $("#carga").click(function () { cerrar(); });
+        window.onbeforeunload = cargando;
+    });
+</script>
+<script>
+
+    function AddNewProvider() {
+        $("#ModalTitle").html("Registrar");
+        $("#MyModal").modal();
+
+
+    }
+
+    function AddNewProvider2() {
+        $("#ModalTitle").html("Login");
+        $("#MyModal2").modal();
+
+
+    }
+
+</script>

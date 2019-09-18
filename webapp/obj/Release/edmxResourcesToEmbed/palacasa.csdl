@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdpalacasaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="mensajesContacto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCliente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="asunto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="mensaje" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="servicioSolicitudSinAutenticar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idServicioTipo" Type="Int32" />
+    <Property Name="nombreCliente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoCliente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="identidad" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefonoCliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccionCliente" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="observacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="servicioTipo" Relationship="Self.FK__servicioS__idSer__3A81B327" FromRole="servicioSolicitudSinAutenticar" ToRole="servicioTipo" />
+    <Property Name="fechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="fechaServicio" Type="DateTime" Precision="0" />
+    <Property Name="horas" Type="Int32" />
+    <Property Name="horaInicio" Type="Int32" />
+    <NavigationProperty Name="servicioHora" Relationship="bdpalacasaModel.FK__servicioS__horaI__3F466844" FromRole="servicioSolicitudSinAutenticar" ToRole="servicioHora" />
+  </EntityType>
+  <EntityType Name="servicioTipo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="servicioSolicitudSinAutenticars" Relationship="Self.FK__servicioS__idSer__3A81B327" FromRole="servicioTipo" ToRole="servicioSolicitudSinAutenticar" />
+  </EntityType>
+  <Association Name="FK__servicioS__idSer__3A81B327">
+    <End Role="servicioTipo" Type="Self.servicioTipo" Multiplicity="0..1" />
+    <End Role="servicioSolicitudSinAutenticar" Type="Self.servicioSolicitudSinAutenticar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicioTipo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="servicioSolicitudSinAutenticar">
+        <PropertyRef Name="idServicioTipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bdpalacasaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mensajesContactoes" EntityType="Self.mensajesContacto" />
+    <EntitySet Name="servicioSolicitudSinAutenticars" EntityType="Self.servicioSolicitudSinAutenticar" />
+    <EntitySet Name="servicioTipoes" EntityType="Self.servicioTipo" />
+    <AssociationSet Name="FK__servicioS__idSer__3A81B327" Association="Self.FK__servicioS__idSer__3A81B327">
+      <End Role="servicioTipo" EntitySet="servicioTipoes" />
+      <End Role="servicioSolicitudSinAutenticar" EntitySet="servicioSolicitudSinAutenticars" />
+    </AssociationSet>
+    <EntitySet Name="servicioHoras" EntityType="bdpalacasaModel.servicioHora" />
+    <AssociationSet Name="FK__servicioS__horaI__3F466844" Association="bdpalacasaModel.FK__servicioS__horaI__3F466844">
+      <End Role="servicioHora" EntitySet="servicioHoras" />
+      <End Role="servicioSolicitudSinAutenticar" EntitySet="servicioSolicitudSinAutenticars" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="servicioHora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="servicioSolicitudSinAutenticars" Relationship="bdpalacasaModel.FK__servicioS__horaI__3F466844" FromRole="servicioHora" ToRole="servicioSolicitudSinAutenticar" />
+  </EntityType>
+  <Association Name="FK__servicioS__horaI__3F466844">
+    <End Type="bdpalacasaModel.servicioHora" Role="servicioHora" Multiplicity="0..1" />
+    <End Type="bdpalacasaModel.servicioSolicitudSinAutenticar" Role="servicioSolicitudSinAutenticar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicioHora">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="servicioSolicitudSinAutenticar">
+        <PropertyRef Name="horaInicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

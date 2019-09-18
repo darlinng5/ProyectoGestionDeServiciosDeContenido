@@ -1,0 +1,51 @@
+﻿@model IEnumerable<SmartAdminMvc.Models.historialModificacionesHModelo>
+
+@{
+    ViewBag.Title = "verModificacionesOrden";
+}
+
+<h2>verModificacionesOrden</h2>
+
+<p>
+    @Html.ActionLink("Regresar", "listarordenespropias")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estadoAnterior)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estadoActual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idOrden)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoAnterior)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoActual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idOrden)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SmartAdminMvc.Models.historialBonoHMModelo>
+
+@{
+    ViewBag.Title = "vermodificacionesbonos";
+}
+
+
+
+<p>
+    @Html.ActionLink("Regresar", "Create")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayName("Usuario")
+        </th>
+        <th>
+            @Html.DisplayName("Fecha Modificacion")
+        </th>
+        <th>
+            @Html.DisplayName("Estado Anterior")
+        </th>
+        <th>
+            @Html.DisplayName("Estado Actual")
+        </th>
+        <th>
+            @Html.DisplayName("Observaciones")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuarioModifico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaModificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoAnterior)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoActual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observacion)
+        </td>
+    </tr>
+}
+
+</table>
