@@ -149,16 +149,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="amazonentity.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>amazonentity.edmx</DependentUpon>
-      <LastGenOutput>amazonentity.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="amazonentity.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>amazonentity.edmx</DependentUpon>
-      <LastGenOutput>amazonentity.cs</LastGenOutput>
-    </Content>
     <Content Include="Areas\Landing\Content\color\default.css" />
     <Content Include="Areas\Landing\Content\css\animate.css" />
     <Content Include="Areas\Landing\Content\css\bootstrap.min.css" />
@@ -237,16 +227,6 @@
     <Content Include="Areas\Landing\Content\js\plugins\jquery.themepunch.revolution.min.js" />
     <Content Include="Areas\Landing\Content\js\plugins\nivo-lightbox.min.js" />
     <Content Include="Areas\Landing\Content\js\plugins\smoothscroll.js" />
-    <Content Include="azureModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>azureModel.edmx</DependentUpon>
-      <LastGenOutput>azureModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="azureModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>azureModel.edmx</DependentUpon>
-      <LastGenOutput>azureModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Cargadores\app.js" />
     <Content Include="Cargadores\styles.css" />
     <Content Include="Content\ajax\email-compose.html" />
@@ -353,16 +333,6 @@
     <Content Include="Content\inicio\assets\js\jquery.scrolly.min.js" />
     <Content Include="Content\inicio\assets\js\main.js" />
     <Content Include="Content\inicio\assets\js\util.js" />
-    <Content Include="dbplc.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbplc.edmx</DependentUpon>
-      <LastGenOutput>dbplc.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="dbplc.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbplc.edmx</DependentUpon>
-      <LastGenOutput>dbplc.cs</LastGenOutput>
-    </Content>
     <Content Include="InsidentesDBContext.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>InsidentesDBContext.edmx</DependentUpon>
@@ -372,26 +342,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>InsidentesDBContext.edmx</DependentUpon>
       <LastGenOutput>InsidentesDBContext.cs</LastGenOutput>
-    </Content>
-    <Content Include="modelopalacasa.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modelopalacasa.edmx</DependentUpon>
-      <LastGenOutput>modelopalacasa.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="modelopalacasa.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modelopalacasa.edmx</DependentUpon>
-      <LastGenOutput>modelopalacasa.cs</LastGenOutput>
-    </Content>
-    <Content Include="palacasa.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>palacasa.edmx</DependentUpon>
-      <LastGenOutput>palacasa.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="palacasa.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>palacasa.edmx</DependentUpon>
-      <LastGenOutput>palacasa.cs</LastGenOutput>
     </Content>
     <Content Include="Presentacion\landing\assets\ajax-loader.gif" />
     <Content Include="Presentacion\landing\assets\css\bootstrap\bootstrap-grid.css" />
@@ -498,16 +448,6 @@
     <Content Include="Presentacion\__MACOSX\landing\assets\js\._main.js" />
     <Content Include="Presentacion\__MACOSX\landing\assets\js\._popper.min.js" />
     <Content Include="Presentacion\__MACOSX\landing\assets\js\._slick.min.js" />
-    <Content Include="somee.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>somee.edmx</DependentUpon>
-      <LastGenOutput>somee.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="somee.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>somee.edmx</DependentUpon>
-      <LastGenOutput>somee.cs</LastGenOutput>
-    </Content>
     <Content Include="Views\inicio\contact.html" />
     <Content Include="Content\inicio\images\banner.jpg" />
     <Content Include="Content\inicio\images\pic01.jpg" />
@@ -520,36 +460,6 @@
     <Content Include="Views\inicio\no-sidebar.html" />
     <Content Include="Content\inicio\README.txt" />
     <Content Include="Views\inicio\right-sidebar.html" />
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="modeloDatosBD.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modeloDatosBD.edmx</DependentUpon>
-      <LastGenOutput>modeloDatosBD.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="modeloDatosBD.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>modeloDatosBD.edmx</DependentUpon>
-      <LastGenOutput>modeloDatosBD.cs</LastGenOutput>
-    </Content>
-    <Content Include="proyectoModelo.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>proyectoModelo.edmx</DependentUpon>
-      <LastGenOutput>proyectoModelo.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="proyectoModelo.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>proyectoModelo.edmx</DependentUpon>
-      <LastGenOutput>proyectoModelo.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\alertify.js" />
     <Content Include="Scripts\alertify.min.js" />
     <Content Include="Scripts\Highcharts-4.0.1\js\adapters\standalone-framework.js" />
@@ -609,20 +519,6 @@
     <Content Include="Cargadores\styles.styl" />
     <Content Include="Views\generico\error.cshtml" />
     <Content Include="Views\generico\exito.cshtml" />
-    <EntityDeploy Include="modeloDatosBD.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>modeloDatosBD.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="modeloDatosBD.edmx.diagram">
-      <DependentUpon>modeloDatosBD.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\inicio\assets\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\inicio\assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\inicio\assets\fonts\fontawesome-webfont.woff" />
@@ -637,13 +533,6 @@
     <Content Include="Content\inicio\assets\sass\main.scss" />
     <Content Include="Content\inicio\assets\sass\noscript.scss" />
     <Content Include="Content\inicio\html5up-twenty.zip" />
-    <EntityDeploy Include="palacasa.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>palacasa.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="palacasa.edmx.diagram">
-      <DependentUpon>palacasa.edmx</DependentUpon>
-    </Content>
     <Content Include="Presentacion\landing\assets\css\style.css.map" />
     <Content Include="Presentacion\landing\assets\fonts\fontawesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Presentacion\landing\assets\fonts\fontawesome\fonts\fontawesome-webfont.ttf" />
@@ -872,34 +761,6 @@
     <Content Include="Presentacion\__MACOSX\landing\assets\scss\components\.__team.scss" />
     <Content Include="Presentacion\__MACOSX\landing\assets\scss\components\.__testimonial.scss" />
     <Content Include="Presentacion\__MACOSX\landing\assets\scss\mixins\.__custom-mixins.scss" />
-    <EntityDeploy Include="dbplc.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>dbplc.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="dbplc.edmx.diagram">
-      <DependentUpon>dbplc.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="azureModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>azureModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="azureModel.edmx.diagram">
-      <DependentUpon>azureModel.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="modelopalacasa.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>modelopalacasa.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="modelopalacasa.edmx.diagram">
-      <DependentUpon>modelopalacasa.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="amazonentity.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>amazonentity.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="amazonentity.edmx.diagram">
-      <DependentUpon>amazonentity.edmx</DependentUpon>
-    </Content>
     <EntityDeploy Include="InsidentesDBContext.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>InsidentesDBContext.Designer.cs</LastGenOutput>
@@ -911,13 +772,6 @@
     <Content Include="Views\votos\nuevoVoto.cshtml" />
     <Content Include="Views\votos\Index.cshtml" />
     <Content Include="Views\inicio\Index.cshtml" />
-    <EntityDeploy Include="proyectoModelo.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>proyectoModelo.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="proyectoModelo.edmx.diagram">
-      <DependentUpon>proyectoModelo.edmx</DependentUpon>
-    </Content>
     <Content Include="Views\proyecto\Index.cshtml" />
     <Content Include="Views\proyecto\formularioOrganizacional.cshtml" />
     <Content Include="Views\proyecto\crearForumularioOrganizacional.cshtml" />
@@ -940,13 +794,6 @@
     <Content Include="Views\public\Index.cshtml" />
     <Content Include="Views\public\Registrar.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <EntityDeploy Include="somee.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>somee.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="somee.edmx.diagram">
-      <DependentUpon>somee.edmx</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <Content Include="Views\client\newOrder.cshtml" />
     <Content Include="Views\client\Index.cshtml" />
@@ -1227,7 +1074,6 @@
     <Content Include="Content\toastr.min.css" />
     <Content Include="Content\xml\gmap\pins.xml" />
     <Content Include="Global.asax" />
-    <Content Include="packages.config" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
@@ -1736,21 +1582,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="amazonentity.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>amazonentity.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="amazonentity.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>amazonentity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="amazonentity.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>amazonentity.edmx</DependentUpon>
-    </Compile>
     <Compile Include="App_Helpers\DashRouteHandler.cs" />
     <Compile Include="App_Helpers\StringExtensions.cs" />
     <Compile Include="App_Helpers\UserManager.cs" />
@@ -1761,9 +1592,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Helpers\Settings.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="area.cs">
-      <DependentUpon>modelopalacasa.tt</DependentUpon>
-    </Compile>
     <Compile Include="Areas\Landing\Controllers\LandingController.cs" />
     <Compile Include="Areas\Landing\LandingAreaRegistration.cs" />
     <Compile Include="AspNetRole.cs">
@@ -1778,39 +1606,9 @@
     <Compile Include="AspNetUserLogin.cs">
       <DependentUpon>InsidentesDBContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="azureModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>azureModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="azureModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>azureModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="azureModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>azureModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="bonosCliente.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="colaboradora.cs">
-      <DependentUpon>modelopalacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="colaboradorDetalle.cs">
-      <DependentUpon>azureModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="comentario.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\adminController.cs" />
     <Compile Include="Controllers\AppViewsController.cs" />
-    <Compile Include="Controllers\clientController.cs" />
     <Compile Include="Controllers\CommerceController.cs" />
-    <Compile Include="Controllers\dashboardController.cs" />
     <Compile Include="Controllers\ElementController.cs" />
     <Compile Include="Controllers\EmailTemplatesController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
@@ -1818,57 +1616,20 @@
     <Compile Include="Controllers\genericoController.cs" />
     <Compile Include="Controllers\GraphsController.cs" />
     <Compile Include="Controllers\FeaturesController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IconsController.cs" />
-    <Compile Include="Controllers\inicioController.cs" />
     <Compile Include="Controllers\insidentesAdminController.cs" />
     <Compile Include="Controllers\InsidentesController.cs" />
     <Compile Include="Controllers\insidentesSuperAdminController.cs" />
     <Compile Include="Controllers\IntelController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MiscController.cs" />
-    <Compile Include="Controllers\proyectoController.cs" />
-    <Compile Include="Controllers\publicController.cs" />
     <Compile Include="Controllers\startController.cs" />
     <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="C__MigrationHistory.cs">
       <DependentUpon>InsidentesDBContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="dbplc.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbplc.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dbplc.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbplc.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dbplc.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbplc.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="empresaDepartamento.cs">
-      <DependentUpon>InsidentesDBContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="empresas_registradas.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="formulario.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="formularioSeccion.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="historialBonosCliete.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="historialModificacionesOrdenesPropia.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
     </Compile>
     <Compile Include="insidente.cs">
       <DependentUpon>InsidentesDBContext.tt</DependentUpon>
@@ -1897,181 +1658,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InsidentesDBContext.edmx</DependentUpon>
     </Compile>
-    <Compile Include="mensajesContacto.cs">
-      <DependentUpon>palacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MetodosPago.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="modeloDatosBD.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modeloDatosBD.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modeloDatosBD.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modeloDatosBD.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modeloDatosBD.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="modelopalacasa.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelopalacasa.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modelopalacasa.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelopalacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="modelopalacasa.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>modelopalacasa.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\cbxUsuariosSoporte.cs" />
-    <Compile Include="Models\colaboradorModelo.cs" />
     <Compile Include="Models\detalleRespuestaModelo.cs" />
-    <Compile Include="Models\diagnosticoOrganizacionalModelo.cs" />
+    <Compile Include="Models\empresaDepartamento.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\respuestaModelo.cs" />
     <Compile Include="Models\insidentesModelo.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\mensajeContactoModelo.cs" />
-    <Compile Include="Models\opcionRespuesta.cs" />
-    <Compile Include="Models\pedidoAutenticadoModelo.cs" />
-    <Compile Include="Models\pedidoExpressModelo.cs" />
     <Compile Include="Models\pedidoPlanModelo.cs" />
     <Compile Include="Models\personalInfoModel.cs" />
-    <Compile Include="Models\plcPedidoAutenticadoModelo.cs" />
-    <Compile Include="Models\preguntaFormularioModelo.cs" />
     <Compile Include="Models\PropiedadesDeModelos.cs" />
-    <Compile Include="Models\proyectoModelo.cs" />
-    <Compile Include="Models\respuestaFormularioModelo.cs" />
-    <Compile Include="Models\servicioHoraModelo.cs" />
-    <Compile Include="Models\servicioSolicitudSAModelo.cs" />
-    <Compile Include="Models\servicioTipoModelo.cs" />
-    <Compile Include="ordene.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="palacasa.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>palacasa.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="palacasa.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>palacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="palacasa.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>palacasa.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="pedidoAutenticado.cs">
-      <DependentUpon>modelopalacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="pedidoExpress.cs">
-      <DependentUpon>amazonentity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="pedidoPlan.cs">
-      <DependentUpon>azureModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="plane.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PlanSuscripcion.cs">
-      <DependentUpon>amazonentity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="preguntaFormulario.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="proyecto.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="proyectoModelo.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>proyectoModelo.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="proyectoModelo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="proyectoModelo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>proyectoModelo.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="respuestaFormulario.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="respuestaFormularioDetalle.cs">
-      <DependentUpon>proyectoModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="servicioHora.cs">
-      <DependentUpon>palacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="servicioSolicitudSinAutenticar.cs">
-      <DependentUpon>palacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="servicioTipo.cs">
-      <DependentUpon>palacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="somee.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>somee.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="somee.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>somee.tt</DependentUpon>
-    </Compile>
-    <Compile Include="somee.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>somee.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>amazonentity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ubicacion.cs">
-      <DependentUpon>modelopalacasa.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UsuariosCliente.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UsuariosExterno.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Voto.cs">
-      <DependentUpon>modeloDatosBD.tt</DependentUpon>
-    </Compile>
     <Compile Include="WebGridExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
