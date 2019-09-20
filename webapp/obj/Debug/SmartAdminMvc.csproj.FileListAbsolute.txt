@@ -862,3 +862,7 @@ C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.cspr
 C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.dll
 C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.pdb
 C:\Users\User\Documents\GitHub\InsidentesSGC\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\MarioRub\Desktop\Proyecto\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache
+C:\Users\MarioRub\Desktop\Proyecto\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.csproj.CoreCompileInputs.cache
+C:\Users\MarioRub\Desktop\Proyecto\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.dll
+C:\Users\MarioRub\Desktop\Proyecto\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.pdb
