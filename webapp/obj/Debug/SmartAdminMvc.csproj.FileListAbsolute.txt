@@ -936,3 +936,4 @@ C:\Users\User\Documents\GitHub\ProyectoGestionDeServiciosDeContenido\webapp\bin\
 C:\Users\User\Documents\GitHub\ProyectoGestionDeServiciosDeContenido\webapp\bin\System.Web.WebPages.Deployment.xml
 C:\Users\User\Documents\GitHub\ProyectoGestionDeServiciosDeContenido\webapp\bin\System.Web.WebPages.Razor.xml
 C:\Users\User\Documents\GitHub\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\ProyectoGestionDeServiciosDeContenido\webapp\obj\Debug\SmartAdminMvc.csprojAssemblyReference.cache

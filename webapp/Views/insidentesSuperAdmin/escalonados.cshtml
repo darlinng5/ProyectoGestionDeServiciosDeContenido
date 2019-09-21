@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<SmartAdminMvc.Models.insidentesModelo>
+
 <!DOCTYPE html>
 
 
@@ -88,7 +89,7 @@
             <div class="portlet box blue">
                 <div class="portlet-title">
                     <div class="caption">
-                        <i class="fa fa-user"></i>Insidentes Resueltos
+                        <i class="fa fa-user"></i>Insidentes Escalonados
                     </div>
                     <div class="tools">
                         <a href="javascript:;" class="collapse"> </a>
@@ -118,7 +119,6 @@
                                 <tr>
                                     <th>Fecha Solicitud</th>
                                     <th>Fecha Tomado</th>
-                                    <th>Fecha Cerrado</th>
                                     <th>Tomado por</th>
                                     <th>Reportado Por</th>
                                     <th>Descripcion</th>
@@ -129,9 +129,8 @@
                                 <tr>
                                     <th>Fecha Solicitud</th>
                                     <th>Fecha Tomado</th>
-                                    <th>Fecha Cerrado</th>
                                     <th>Tomado por</th>
-                                    <th>Reportado Por</th>
+                                    <th>Departamento</th>
                                     <th>Descripcion</th>
                                     <th>Acciones</th>
                                 </tr>
@@ -139,31 +138,30 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                <tr class="Search">
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.fechaSolicitud)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.fechaTomado)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.fechaCierre)
-                                    </td>
-                                    <td>
+                                    <tr class="Search">
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.fechaSolicitud)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.fechaTomado)
+                                        </td>
+                                        <td>
 
-                                        @Html.DisplayFor(modelItem => item.nombreDeUsuarioResolvioInsidente)
+                                            @Html.DisplayFor(modelItem => item.nombreDeUsuarioResolvioInsidente)
 
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.nombrePriorizacion)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.breveDescripcion)
-                                    </td>
-                                    <td>
-                                        @Html.ActionLink("Ver Detalles", "todosLosDetalles", new { id = item.id }, new { @class = "btn btn-primary" })
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.nombreDepartamento)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.breveDescripcion)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Ver Detalles", "todosLosDetalles", new { id = item.id }, new { @class = "btn btn-primary" })
+                                            @Html.ActionLink("Dar Respuesta", "todosLosDetalles", new { id = item.id }, new { @class = "btn btn-warning" })
+
+                                        </td>
+                                    </tr>
                                 }
 
                             </tbody>
@@ -241,3 +239,4 @@
     }
 
 </script>
+

@@ -73,10 +73,10 @@
                             <a href="@Url.Action("index", "insidentessuperadmin")" title="Dashboard"><i class="fa fa-lg fa-folder-open fa-gear"></i> <span class="menu-item-parent">Pendientes</span></a>
                         </li>
                         <li class="@Html.RouteIf("applayout", "active")">
-                            <a href="@Url.Action("index", "insidentes")" title="Dashboard"><i class="fa fa-lg fa-apple fa-gear"></i> <span class="menu-item-parent">Asignados</span></a>
+                            <a href="@Url.Action("asignados", "insidentessuperadmin")" title="Dashboard"><i class="fa fa-lg fa-apple fa-gear"></i> <span class="menu-item-parent">Asignados</span></a>
                         </li>
                         <li class="@Html.RouteIf("applayout", "active")">
-                            <a href="@Url.Action("index", "insidentes")" title="Dashboard"><i class="fa fa-lg fa-archive fa-gear"></i> <span class="menu-item-parent">Resueltos</span></a>
+                            <a href="@Url.Action("resueltos", "insidentessuperadmin")" title="Dashboard"><i class="fa fa-lg fa-archive fa-gear"></i> <span class="menu-item-parent">Resueltos</span></a>
                         </li>
 
                     </ul>
@@ -86,7 +86,7 @@
                     <a href="#"><i class="fa fa-lg fa-fw fa-automobile txt-color-blue"></i> <span class="menu-item-parent">Escalonados</span></a>
                     <ul>
                         <li class="@Html.RouteIf("applayout", "active")">
-                            <a href="@Url.Action("editpersonalinfo", "client")" title="Dashboard"><i class="fa fa-lg fa-address-book fa-gear"></i> <span class="menu-item-parent">Listar Escalonados</span></a>
+                            <a href="@Url.Action("escalonados", "insidentessuperadmin")" title="Dashboard"><i class="fa fa-lg fa-address-book fa-gear"></i> <span class="menu-item-parent">Listar Escalonados</span></a>
                         </li>
                     </ul>
                 </li>
