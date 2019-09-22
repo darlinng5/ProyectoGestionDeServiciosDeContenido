@@ -93,7 +93,7 @@ namespace SmartAdminMvc.Controllers
                                 id = s.idDepartamento,
                                 nombre = s.nombre
                             };
-
+                
             ViewBag.empresaDepartamentos = new SelectList(empresaDepartamentos.ToList(), "id", "nombre");
             var insidentesCategoria = from s in db.insidenteCategorias
 

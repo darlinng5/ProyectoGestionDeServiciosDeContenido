@@ -821,6 +821,7 @@
     <Content Include="Views\insidentesSuperAdmin\todosLosDetalles.cshtml" />
     <Content Include="Views\insidentesSuperAdmin\cambiarPrioridad.cshtml" />
     <Content Include="Views\insidentesSuperAdmin\asignarUsuario.cshtml" />
+    <Content Include="Views\Departamentos\DepartamentoNuevo.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -1609,6 +1610,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppViewsController.cs" />
     <Compile Include="Controllers\CommerceController.cs" />
+    <Compile Include="Controllers\DepartamentosController.cs" />
     <Compile Include="Controllers\ElementController.cs" />
     <Compile Include="Controllers\EmailTemplatesController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
@@ -1661,7 +1663,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\cbxUsuariosSoporte.cs" />
     <Compile Include="Models\detalleRespuestaModelo.cs" />
-    <Compile Include="Models\empresaDepartamento.cs" />
+    <Compile Include="Models\empresaDepartamentoModelo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\respuestaModelo.cs" />
     <Compile Include="Models\insidentesModelo.cs" />
