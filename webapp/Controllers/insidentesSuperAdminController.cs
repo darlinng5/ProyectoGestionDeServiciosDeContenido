@@ -60,8 +60,9 @@ namespace SmartAdminMvc.Controllers
                                           id = s.id,
                                           fechaSolicitud = s.fechaSolicitud,
                                           fechaTomado = s.fechaTomado,
+                                          fechaCierre = s.fechaCierre,
                                           breveDescripcion = s.breveDescripcion,
-                                          nombrePriorizacion = s.insidentePriorizacion.nombre,
+                                          nombrePriorizacion = s.AspNetUser.UserName,
                                           nombreDepartamento = s.empresaDepartamento.nombre,
                                           nombreCategoria = s.insidenteCategoria.nombre,
                                           nombreDeUsuarioResolvioInsidente = s.AspNetUser1.UserName
@@ -69,6 +70,27 @@ namespace SmartAdminMvc.Controllers
 
             return View(insidentesResueltos.ToList());
         }
+
+        public ActionResult escalonados()
+        {
+            var insidentesResueltos = from s in db.insidentes
+                                      where s.estado == PropiedadesDeModelos.estadoEscalonado
+                                      select new insidentesModelo
+                                      {
+                                          id = s.id,
+                                          fechaSolicitud = s.fechaSolicitud,
+                                          fechaTomado = s.fechaTomado,
+                                          fechaCierre = s.fechaCierre,
+                                          breveDescripcion = s.breveDescripcion,
+                                          nombrePriorizacion = s.AspNetUser.UserName,
+                                          nombreDepartamento = s.empresaDepartamento.nombre,
+                                          nombreCategoria = s.insidenteCategoria.nombre,
+                                          nombreDeUsuarioResolvioInsidente = s.AspNetUser1.UserName
+                                      };
+
+            return View(insidentesResueltos.ToList());
+        }
+
 
         public ActionResult todosLosDetalles(int id)
         {

@@ -225,6 +225,7 @@ namespace SmartAdminMvc.Controllers
                 respuesta.resolvioProblema = true;
                 insidente.problemaResuelto = true;
                 insidente.estado = PropiedadesDeModelos.estadoCerrado;
+                insidente.fechaCierre = DateTime.Now;
                 db.SaveChanges();
                 TempData["respuestadespuesdeejectaraccion"] = "La respuesta se ha marcado como valida";
                 return RedirectToAction("index");

@@ -136,7 +136,7 @@ namespace SmartAdminMvc.Controllers
             {
                 TempData["respuestadespuesdeejectaraccion"] = "La respuesta ha sido creada con exito!!!";
                 
-                return RedirectToAction("insidenteRespuestaAdmin");
+                return RedirectToAction("misinsidentesasignados");
             }
             else
             {
@@ -168,7 +168,7 @@ namespace SmartAdminMvc.Controllers
         {
             string userId = User.Identity.GetUserId();
             var insidente = db.insidentes.Where(x => x.id == id && x.idUsuarioResolvioInsidente == userId).FirstOrDefault();
-            bool puedoVerInsidente = insidente != null && insidente.estado == PropiedadesDeModelos.estadoAsignado;
+            bool puedoVerInsidente = insidente != null;
             if (puedoVerInsidente)
             {
                 return View(insidente);
